@@ -1,452 +1,421 @@
-<!DOCTYPE html>
-<html lang="en">
+	<!DOCTYPE html>
+	<html lang="en">
 
 
-<head>
-	<meta charset="UTF-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-	<title>IT Hunter - Kontakty</title>
+	<head>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+		<title>IT Hunter - Kontakty</title>
 
-	<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-	<link rel="stylesheet" type="text/css" href="css/plugins.min.css">
-	<link rel="stylesheet" type="text/css" href="css/theme-styles.min.css">
-	<link rel="stylesheet" type="text/css" href="css/blocks.min.css">
-	<link rel="stylesheet" type="text/css" href="css/widgets.min.css">
-	<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-	<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+		<link rel="stylesheet" type="text/css" href="css/plugins.min.css">
+		<link rel="stylesheet" type="text/css" href="css/theme-styles.min.css">
+		<link rel="stylesheet" type="text/css" href="css/blocks.min.css">
+		<link rel="stylesheet" type="text/css" href="css/widgets.min.css">
+		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700i,900," rel="stylesheet">
-
-
-	<!--Styles for RTL-->
-
-	<!--<link rel="stylesheet" type="text/css" href="css/rtl.css">-->
+		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700i,900," rel="stylesheet">
 
 
-</head>
+		<!--Styles for RTL-->
 
-<body class="crumina-grid">
+		<!--<link rel="stylesheet" type="text/css" href="css/rtl.css">-->
 
-	<div id="alert-success">
+
+	</head>
+
+	<body class="crumina-grid">
+
+		<div id="alert-success">
+				<div class="container">
+					<div class="row">
+						<div class="col-md-12">
+							<div class="alert alert--large-bg alert-success" role="alert">
+								<div class="alert-icon">
+									<svg class="woox-icon icon-check-mark-2"><use xlink:href="svg-icons/sprites/icons.svg#icon-check-mark-2"></use></svg>
+								</div>
+								<div class="alert-content">
+									<strong>Váš dotaz byl odeslán!</strong>
+									 Děkujeme za Váš dotaz. Budeme Vás kontaktovat v nejbližší době.
+								</div>
+								<p style="cursor:pointer" class="icon-close">
+									<svg class="woox-icon icon-del"><use xlink:href="svg-icons/sprites/icons.svg#icon-del"></use></svg>
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+	<!-- Preloader -->
+
+
+	<!-- ... end Preloader -->
+
+	<!-- Header -->
+
+	<header class="header" id="site-header">
+		<div class="container">
+			<div class="header-content-wrapper">
+				<a href="index.html" class="site-logo">
+					<img src="img/logo.png" alt="ITHunter">
+				</a>
+
+				<a href="#" class="open-main-menu js-open-aside js-body-overlay">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+			</div>
+		</div>
+	</header>
+
+	<!-- ... end Header -->
+
+
+	<!-- Overlay Menu -->
+
+	<div class="overlay-menu-wrap overlay-menu--style2" id="overlay-menu">
+			<a class='popup-close js-open-aside js-body-overlay' href='#'>
+				<svg class="woox-icon icon-close"><use xlink:href="svg-icons/sprites/icons.svg#icon-close"></use></svg>
+			</a>
+			<div class="perfect-scroll">
+				<nav class="overlay-menu">
+					<ul class="overlay-menu-list">
+						<li class="overlay-menu-item">
+								<a href="index.html">domů</a>
+							</li>
+							<li class="overlay-menu-item">
+								<a href="references.html">reference</a>
+							</li>
+						<li class="overlay-menu-item">
+							<a href="index.html#anchor-cenik" class="anchor-cenik">cenik</a>
+						</li>
+						<li class="overlay-menu-item">
+							<a href="index.html#anchor-tym" class="anchor-tym">tym</a>
+						</li>
+						<li class="overlay-menu-item">
+							<a href="kontakt.html">kontakt</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+
+	<!-- ... Overlay Menu -->
+
+	<div class="main-content-wrapper">
+
+		<section data-settings="particles-1" class="main-section crumina-flying-balls particles-js">
+			<div class="container">
+				<div class="row medium-padding80">
+					<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+						<header class="crumina-module crumina-heading heading--h2 heading--with-decoration">
+							<div class="heading-sup-title">KONTAKTY</div>
+							<h2 class="heading-title heading--half-colored">Získejte nezávaznou kalkulaci <b> ceny služeb zdarma</b></h2>
+							<div class="heading-text">Nabízím Vám možnost, jak zcela nezávazně (zdarma) zjistit, kolik by Vás mé služby stály. Vyplňte formulář a já Vám do 24 hodin odpovím.
+							</div>
+						</header>
+					</div>
+
+					<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+							<form class="contact-form login-form" method="post" action="mail.php">
+								<!-- Hidden Required Fields -->
+							<input type="hidden" name="ithunter" value="IT Hunter">
+							<input type="hidden" name="admin_email" value="kanat3108@gmail.com">
+							<input type="hidden" name="form_subject" value="Form Subject">
+							<!-- END Hidden Required Fields -->
+								<div class="row">
+									<div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 mb30">
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" name="Landing-Page">
+												landing page
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" name="mobileapp" >
+												mobilní aplikace
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" name="e-shop" >
+												e-shop
+											</label>
+										</div>
+										<div class="checkbox">
+											<label>
+												<input type="checkbox" name="design" >
+												design
+											</label>
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+										<div class="form-group label-floating is-empty">
+											<label class="input-label control-label">Vaše zpráva <abbr class="required" title="required">*</abbr></label>
+											<textarea class="form-control input--squared height-140" name="message" placeholder=""></textarea>
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+										<div class="form-group label-floating">
+											<label class="input-label control-label"> Jméno <abbr class="required" title="required">*</abbr></label>
+											<input class="form-control input--squared" type="text" name="name" value="">
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+										<div class="form-group label-floating">
+											<label class="input-label control-label"> E-mail <abbr class="required" title="required">*</abbr></label>
+											<input class="form-control input--squared" type="email" name="email" value="">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="form-group label-floating is-empty">
+											<label class="input-label control-label">Telefon<abbr class="required" title="required">*</abbr></label>
+											<input class="form-control input--squared" type="phone" name="phone" value="">
+										</div>
+									</div>
+
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<button class="btn btn--medium btn--secondary btn--hover-decoration full-width" type="submit">odeslat</button>
+									</div>
+
+								</div>
+							</form>
+						</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="container">
+				<div class="row pt80">
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+						<div class="contact-item" data-mh="equal-block">
+							<h4 class="contact-item-title">Naše adresa</h4>
+							<div class="info-wrap">
+								<div class="info">	 U průhonu 827/5</div>
+								<span>Praha - Holešovice, PSČ 170 00</span>
+							</div>
+						</div>
+					</div>
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+						<div class="contact-item" data-mh="equal-block">
+							<h4 class="contact-item-title">Odborník na telefonu</h4>
+							<div class="info-wrap">
+								<div class="info">Telefon: <span>+420 608 867 730</span></div>
+								<div class="info">Email: <a href="mailto:ithuntercz@gmail.com" class="link--with-decoration">ithuntercz@gmail.com</a></div>
+							</div>
+						</div>
+					</div>
+					
+					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
+						<div class="contact-item" data-mh="equal-block">
+							<h4 class="contact-item-title">Úřední hodiny</h4>
+							<div class="info-wrap">
+								<div class="info">Pondělí - Pátek: <span>9.00 - 18.00</span></div>
+								<div class="info">Sat: <span>10.00  - 14.00 </span></div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</section>
+
+		<section>
+			<div class="container">
+				<div class="row medium-padding80">
+					<div class="col-lg-12 col-lg-12 col-sm-12 col-xs-12">
+						<!-- Google map -->
+						<div class="google-map height-860" data-map-style="[
+						{'elementType': 'geometry', 'stylers': [{'color': '#242f3e'}]},
+	  {'elementType': 'labels.text.stroke', 'stylers': [{'color': '#242f3e'}]},
+	  {'elementType': 'labels.text.fill', 'stylers': [{'color': '#746855'}]},
+	  {
+	    'featureType': 'administrative.locality',
+	    'elementType': 'labels.text.fill',
+	    'stylers': [{'color': '#d59563'}]
+	  },
+	  {
+	    'featureType': 'poi',
+	    'elementType': 'labels.text.fill',
+	    'stylers': [{'color': '#d59563'}]
+	  },
+	  {
+	    'featureType': 'poi.park',
+	    'elementType': 'geometry',
+	    'stylers': [{'color': '#3d434f'}]
+	  },
+	  {
+	    'featureType': 'poi.park',
+	    'elementType': 'labels.text.fill',
+	    'stylers': [{'color': '#6b9a76'}]
+	  },
+	  {
+	    'featureType': 'road',
+	    'elementType': 'geometry',
+	    'stylers': [{'color': '#666d7a'}]
+	  },
+	  {
+	    'featureType': 'road',
+	    'elementType': 'geometry.stroke',
+	    'stylers': [{'color': '#212a37'}]
+	  },
+	  {
+	    'featureType': 'road',
+	    'elementType': 'labels.text.fill',
+	    'stylers': [{'color': '#9ca5b3'}]
+	  },
+	  {
+	    'featureType': 'road.highway',
+	    'elementType': 'geometry',
+	    'stylers': [{'color': '#746855'}]
+	  },
+	  {
+	    'featureType': 'road.highway',
+	    'elementType': 'geometry.stroke',
+	    'stylers': [{'color': '#1f2835'}]
+	  },
+	  {
+	    'featureType': 'road.highway',
+	    'elementType': 'labels.text.fill',
+	    'stylers': [{'color': '#f3d19c'}]
+	  },
+	  {
+	    'featureType': 'transit',
+	    'elementType': 'geometry',
+	    'stylers': [{'color': '#2f3948'}]
+	  },
+	  {
+	    'featureType': 'transit.station',
+	    'elementType': 'labels.text.fill',
+	    'stylers': [{'color': '#d59563'}]
+	  },
+	  {
+	    'featureType': 'water',
+	    'elementType': 'geometry',
+	    'stylers': [{'color': '#17263c'}]
+	  },
+	  {
+	    'featureType': 'water',
+	    'elementType': 'labels.text.fill',
+	    'stylers': [{'color': '#515c6d'}]
+	  },
+	  {
+	    'featureType': 'water',
+	    'elementType': 'labels.text.stroke',
+	    'stylers': [{'color': '#17263c'}]
+	  }
+	]" data-locations="U Průhonu 827/5, 170 00 Praha 7-Holešovice" data-zoom="16" data-map-type="roadmap" data-custom-marker="img/marker-google.png">
+							<div class="block-location-info">
+								<header class="crumina-module crumina-heading heading--h2 heading--with-decoration custom-color c-white">
+									<h2 class="heading-title">Jsme tady</h2>
+								</header>
+								<h6 class="adress">U Průhonu 827/5, 170 00 Praha 7 - Holešovice</h6>
+							</div>
+							<div class="map-canvas"></div>
+						</div>
+
+						<!-- End Google map -->
+					</div>
+				</div>
+			</div>
+		</section>
+	</div>
+
+	<!-- Footer -->
+
+	<footer id="site-footer" class="footer crumina-parallax-background">
+
+			<div class="scene">
+				<div data-depth="0.2" class="layer first-layer"></div>
+				<div data-depth="0.6" class="layer second-layer"></div>
+				<div data-depth="1" class="layer third-layer"></div>
+			</div>
+
 			<div class="container">
 				<div class="row">
-					<div class="col-md-12">
-						<div class="alert alert--large-bg alert-success" role="alert">
-							<div class="alert-icon">
-								<svg class="woox-icon icon-check-mark-2"><use xlink:href="svg-icons/sprites/icons.svg#icon-check-mark-2"></use></svg>
-							</div>
-							<div class="alert-content">
-								<strong>Váš dotaz byl odeslán!</strong>
-								 Děkujeme za Váš dotaz. Budeme Vás kontaktovat v nejbližší době.
-							</div>
-							<p style="cursor:pointer" class="icon-close">
-								<svg class="woox-icon icon-del"><use xlink:href="svg-icons/sprites/icons.svg#icon-del"></use></svg>
+					<div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
+						<div class="widget w-info">
+							<a href="index.html" class="site-logo">
+								<img src="img/logo.png" alt="ITHunter">
+							</a>
+							<p>Kvalitní webové stránky vám pomohou k dosažení požadovaných cílů
 							</p>
 						</div>
-					</div>
-				</div>
-			</div>
-		</div>
+						<div class="copyright-wrapper">
+								<a class="back-to-top" href="#">
+									<svg class="woox-icon icon-top-arrow"><use xlink:href="svg-icons/sprites/icons.svg#icon-top-arrow"></use></svg>
+								</a>
 
-<!-- Preloader -->
-
-<div id="hellopreloader">
-		<div class="preloader">
-			<svg width="80" height="80" fill="#fff" viewBox="0 0 105 105">
-				<circle cx="12.5" cy="12.5" r="12.5">
-					<animate attributeName="fill-opacity" begin="0s" calcMode="linear" dur="1s" repeatCount="indefinite" values="1;.2;1"/>
-				</circle>
-				<circle cx="12.5" cy="52.5" r="12.5" fill-opacity=".5">
-					<animate attributeName="fill-opacity" begin="100ms" calcMode="linear" dur="1s" repeatCount="indefinite" values="1;.2;1"/>
-				</circle>
-				<circle cx="52.5" cy="12.5" r="12.5">
-					<animate attributeName="fill-opacity" begin="300ms" calcMode="linear" dur="1s" repeatCount="indefinite" values="1;.2;1"/>
-				</circle>
-				<circle cx="52.5" cy="52.5" r="12.5">
-					<animate attributeName="fill-opacity" begin="600ms" calcMode="linear" dur="1s" repeatCount="indefinite" values="1;.2;1"/>
-				</circle>
-				<circle cx="92.5" cy="12.5" r="12.5">
-					<animate attributeName="fill-opacity" begin="800ms" calcMode="linear" dur="1s" repeatCount="indefinite" values="1;.2;1"/>
-				</circle>
-				<circle cx="92.5" cy="52.5" r="12.5">
-					<animate attributeName="fill-opacity" begin="400ms" calcMode="linear" dur="1s" repeatCount="indefinite" values="1;.2;1"/>
-				</circle>
-				<circle cx="12.5" cy="92.5" r="12.5">
-					<animate attributeName="fill-opacity" begin="700ms" calcMode="linear" dur="1s" repeatCount="indefinite" values="1;.2;1"/>
-				</circle>
-				<circle cx="52.5" cy="92.5" r="12.5">
-					<animate attributeName="fill-opacity" begin="500ms" calcMode="linear" dur="1s" repeatCount="indefinite" values="1;.2;1"/>
-				</circle>
-				<circle cx="92.5" cy="92.5" r="12.5">
-					<animate attributeName="fill-opacity" begin="200ms" calcMode="linear" dur="1s" repeatCount="indefinite" values="1;.2;1"/>
-				</circle>
-			</svg>
-			<div class="text">Načítání ...</div>
-		</div>
-	</div>
-
-<!-- ... end Preloader -->
-
-<!-- Header -->
-
-<header class="header" id="site-header">
-	<div class="container">
-		<div class="header-content-wrapper">
-			<a href="index.html" class="site-logo">
-				<img src="img/logo.png" alt="ITHunter">
-			</a>
-
-			<a href="#" class="open-main-menu js-open-aside js-body-overlay">
-				<span></span>
-				<span></span>
-				<span></span>
-			</a>
-		</div>
-	</div>
-</header>
-
-<!-- ... end Header -->
-
-
-<!-- Overlay Menu -->
-
-<div class="overlay-menu-wrap overlay-menu--style2" id="overlay-menu">
-	<a class='popup-close js-open-aside js-body-overlay' href='#'>
-		<svg class="woox-icon icon-close"><use xlink:href="svg-icons/sprites/icons.svg#icon-close"></use></svg>
-	</a>
-	<div class="perfect-scroll">
-		<nav class="overlay-menu">
-		<ul class="overlay-menu-list">
-			<li class="overlay-menu-item">
-				<a href="references.html">reference</a>
-			</li>
-			<li class="overlay-menu-item">
-				<a href="index.html" class="anchor-cenik">cenik</a>
-			</li>
-			<li class="overlay-menu-item">
-				<a href="index.html" class="anchor-tym">tym</a>
-			</li>
-			<li class="overlay-menu-item">
-				<a href="kontakt.html">kontakt</a>
-			</li>
-		</ul>
-	</nav>
-	</div>
-</div>
-
-<!-- ... Overlay Menu -->
-
-<div class="main-content-wrapper">
-
-	<section data-settings="particles-1" class="main-section crumina-flying-balls particles-js">
-		<div class="container">
-			<div class="row medium-padding120">
-				<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-					<header class="crumina-module crumina-heading heading--h2 heading--with-decoration">
-						<div class="heading-sup-title">KONTAKTY</div>
-						<h2 class="heading-title heading--half-colored">Získejte nezávaznou kalkulaci <b> ceny služeb zdarma</b></h2>
-						<div class="heading-text">Nabízím Vám možnost, jak zcela nezávazně (zdarma) zjistit, kolik by Vás mé služby stály. Vyplňte formulář a já Vám do 24 hodin odpovím.
-						</div>
-					</header>
-				</div>
-
-				<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-						<form class="contact-form login-form" method="post" action="mail.php">
-							<!-- Hidden Required Fields -->
-						<input type="hidden" name="ithunter" value="IT Hunter">
-						<input type="hidden" name="admin_email" value="kanat3108@gmail.com">
-						<input type="hidden" name="form_subject" value="Form Subject">
-						<!-- END Hidden Required Fields -->
-							<div class="row">
-								<div class="col-lg-12 col-md-6 col-sm-12 col-xs-12 mb30">
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" name="Landing-Page">
-											landing page
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" name="mobileapp" >
-											mobilní aplikace
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" name="e-shop" >
-											e-shop
-										</label>
-									</div>
-									<div class="checkbox">
-										<label>
-											<input type="checkbox" name="design" >
-											design
-										</label>
-									</div>
-								</div>
-								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									<div class="form-group label-floating is-empty">
-										<label class="input-label control-label">Vaše zpráva <abbr class="required" title="required">*</abbr></label>
-										<textarea class="form-control input--squared height-140" name="message" placeholder=""></textarea>
-									</div>
-								</div>
-								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									<div class="form-group label-floating">
-										<label class="input-label control-label"> Jméno <abbr class="required" title="required">*</abbr></label>
-										<input class="form-control input--squared" type="text" name="name" value="">
-									</div>
-								</div>
-								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									<div class="form-group label-floating">
-										<label class="input-label control-label"> E-mail <abbr class="required" title="required">*</abbr></label>
-										<input class="form-control input--squared" type="email" name="email" value="">
-									</div>
+								<div>
+									<span>IČO 	07363061</span><br>
+									<span>U Průhonu 827/5, 170 00 Praha 7 - Holešovice</span><br>
+									<span><a href="index.html">IT Hunter company s.r.o.</a> - Creative Agency .</span><br>
+									<span>© All right reserved 2018.</span>
 								</div>
 							</div>
-							<div class="row">
-								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-									<div class="form-group label-floating is-empty">
-										<label class="input-label control-label">Telefon<abbr class="required" title="required">*</abbr></label>
-										<input class="form-control input--squared" type="phone" name="phone" value="">
-									</div>
-								</div>
-
-								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-									<button class="btn btn--medium btn--secondary btn--hover-decoration full-width" type="submit">odeslat</button>
-								</div>
-
-							</div>
-						</form>
 					</div>
-			</div>
-		</div>
-	</section>
+					<div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
+						<div class="widget w-contacts">
+							<ul class="socials">
+								<li>
+									<a href="#">
+										<i class="fab fa-instagram woox-icon"></i>
+									</a>
+								</li>
 
-	<section>
-		<div class="container">
-			<div class="row pt120">
-				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-					<div class="contact-item" data-mh="equal-block">
-						<h4 class="contact-item-title">Naše adresa</h4>
-						<div class="info-wrap">
-							<div class="info">	 U průhonu 827/5</div>
-							<span>Praha - Holešovice, PSČ 170 00</span>
-						</div>
-					</div>
-				</div>
-				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-					<div class="contact-item" data-mh="equal-block">
-						<h4 class="contact-item-title">Odborník na telefonu</h4>
-						<div class="info-wrap">
-							<div class="info">Telefon: <span>+420 608 867 730</span></div>
-							<div class="info">Email: <a href="mailto:ithuntercz@gmail.com" class="link--with-decoration">ithuntercz@gmail.com</a></div>
-						</div>
-					</div>
-				</div>
-				
-				<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12">
-					<div class="contact-item" data-mh="equal-block">
-						<h4 class="contact-item-title">Úřední hodiny</h4>
-						<div class="info-wrap">
-							<div class="info">Pondělí - Pátek: <span>9.00 - 18.00</span></div>
-							<div class="info">Sat: <span>10.00  - 14.00 </span></div>
+								<li>
+									<a href="#">
+										<i class="fab fa-linkedin-in woox-icon"></i>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<i class="fab fa-facebook-square woox-icon"></i>
+									</a>
+								</li>
+							</ul>
+							<div class="send-us"><a href="" class="link--with-decoration">ithuntercz@gmail.com</a></div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</section>
+		</footer>
 
-	<section>
-		<div class="container">
-			<div class="row medium-padding120">
-				<div class="col-lg-12 col-lg-12 col-sm-12 col-xs-12">
-					<!-- Google map -->
-					<div class="google-map height-860" data-map-style="[
-					{'elementType': 'geometry', 'stylers': [{'color': '#242f3e'}]},
-  {'elementType': 'labels.text.stroke', 'stylers': [{'color': '#242f3e'}]},
-  {'elementType': 'labels.text.fill', 'stylers': [{'color': '#746855'}]},
-  {
-    'featureType': 'administrative.locality',
-    'elementType': 'labels.text.fill',
-    'stylers': [{'color': '#d59563'}]
-  },
-  {
-    'featureType': 'poi',
-    'elementType': 'labels.text.fill',
-    'stylers': [{'color': '#d59563'}]
-  },
-  {
-    'featureType': 'poi.park',
-    'elementType': 'geometry',
-    'stylers': [{'color': '#3d434f'}]
-  },
-  {
-    'featureType': 'poi.park',
-    'elementType': 'labels.text.fill',
-    'stylers': [{'color': '#6b9a76'}]
-  },
-  {
-    'featureType': 'road',
-    'elementType': 'geometry',
-    'stylers': [{'color': '#666d7a'}]
-  },
-  {
-    'featureType': 'road',
-    'elementType': 'geometry.stroke',
-    'stylers': [{'color': '#212a37'}]
-  },
-  {
-    'featureType': 'road',
-    'elementType': 'labels.text.fill',
-    'stylers': [{'color': '#9ca5b3'}]
-  },
-  {
-    'featureType': 'road.highway',
-    'elementType': 'geometry',
-    'stylers': [{'color': '#746855'}]
-  },
-  {
-    'featureType': 'road.highway',
-    'elementType': 'geometry.stroke',
-    'stylers': [{'color': '#1f2835'}]
-  },
-  {
-    'featureType': 'road.highway',
-    'elementType': 'labels.text.fill',
-    'stylers': [{'color': '#f3d19c'}]
-  },
-  {
-    'featureType': 'transit',
-    'elementType': 'geometry',
-    'stylers': [{'color': '#2f3948'}]
-  },
-  {
-    'featureType': 'transit.station',
-    'elementType': 'labels.text.fill',
-    'stylers': [{'color': '#d59563'}]
-  },
-  {
-    'featureType': 'water',
-    'elementType': 'geometry',
-    'stylers': [{'color': '#17263c'}]
-  },
-  {
-    'featureType': 'water',
-    'elementType': 'labels.text.fill',
-    'stylers': [{'color': '#515c6d'}]
-  },
-  {
-    'featureType': 'water',
-    'elementType': 'labels.text.stroke',
-    'stylers': [{'color': '#17263c'}]
-  }
-]" data-locations="U Průhonu 827/5, 170 00 Praha 7-Holešovice" data-zoom="16" data-map-type="roadmap" data-custom-marker="img/marker-google.png">
-						<div class="block-location-info">
-							<header class="crumina-module crumina-heading heading--h2 heading--with-decoration custom-color c-white">
-								<h2 class="heading-title">Jsme tady</h2>
-							</header>
-							<h6 class="adress">U Průhonu 827/5, 170 00 Praha 7 - Holešovice</h6>
-						</div>
-						<div class="map-canvas"></div>
-					</div>
-
-					<!-- End Google map -->
-				</div>
-			</div>
-		</div>
-	</section>
-</div>
-
-<!-- Footer -->
-
-<footer id="site-footer" class="footer crumina-parallax-background">
-
-		<div class="scene">
-			<div data-depth="0.2" class="layer first-layer"></div>
-			<div data-depth="0.6" class="layer second-layer"></div>
-			<div data-depth="1" class="layer third-layer"></div>
-		</div>
-
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
-					<div class="widget w-info">
-						<a href="index.html" class="site-logo">
-							<img src="img/logo.png" alt="ITHunter">
-						</a>
-						<p>Kvalitní webové stránky vám pomohou k dosažení požadovaných cílů
-						</p>
-					</div>
-					<div class="copyright-wrapper">
-							<a class="back-to-top" href="#">
-								<svg class="woox-icon icon-top-arrow"><use xlink:href="svg-icons/sprites/icons.svg#icon-top-arrow"></use></svg>
-							</a>
-
-							<div>
-								<span>IČO 	07363061</span><br>
-								<span>U Průhonu 827/5, 170 00 Praha 7 - Holešovice</span><br>
-								<span><a href="index.html">IT Hunter company s.r.o.</a> - Creative Agency .</span><br>
-								<span>© All right reserved 2018.</span>
-							</div>
-						</div>
-				</div>
-				<div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
-					<div class="widget w-contacts">
-						<ul class="socials">
-							<li>
-								<a href="#">
-									<i class="fab fa-instagram woox-icon"></i>
-								</a>
-							</li>
-
-							<li>
-								<a href="#">
-									<i class="fab fa-linkedin-in woox-icon"></i>
-								</a>
-							</li>
-
-							<li>
-								<a href="#">
-									<i class="fab fa-facebook-square woox-icon"></i>
-								</a>
-							</li>
-						</ul>
-						<div class="send-us"><a href="" class="link--with-decoration">ithuntercz@gmail.com</a></div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</footer>
-
-<!-- ... end Footer -->
+	<!-- ... end Footer -->
 
 
-<script src="js/method-assign.js"></script>
+	<script src="js/method-assign.js"></script>
 
-<!-- jQuery first, then Other JS. -->
+	<!-- jQuery first, then Other JS. -->
 
-<script src="js/jquery-3.3.1.min.js"></script>
+	<script src="js/jquery-3.3.1.min.js"></script>
 
-<script src="js/map-shortcode.js"></script>
+	<script src="js/map-shortcode.js"></script>
 
-<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDpqPQbjKiY7zSvLyPRIWWOfG1XiuhhYg"
-		async defer></script>
+	<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDDpqPQbjKiY7zSvLyPRIWWOfG1XiuhhYg"
+			async defer></script>
 
-<script src="js/theme-plugins.js"></script>
+	<script src="js/theme-plugins.js"></script>
 
-<script src="js/js-plugins/isotope.pkgd.min.js"></script>
-<script src="js/js-plugins/ajax-pagination.js"></script>
-<script src="js/js-plugins/swiper.min.js"></script>
-<script src="js/js-plugins/material.min.js"></script>
+	<script src="js/js-plugins/isotope.pkgd.min.js"></script>
+	<script src="js/js-plugins/ajax-pagination.js"></script>
+	<script src="js/js-plugins/swiper.min.js"></script>
+	<script src="js/js-plugins/material.min.js"></script>
 
-<script src="js/js-plugins/bootstrap-datepicker.js"></script><!-- FontAwesome 5.x.x JS -->
+	<script src="js/js-plugins/bootstrap-datepicker.js"></script><!-- FontAwesome 5.x.x JS -->
 
-<script defer src="fonts/fontawesome-all.js"></script>
+	<script defer src="fonts/fontawesome-all.js"></script>
 
-<script src="js/main.js"></script>
+	<script src="js/main.js"></script>
 
-</body>
+	</body>
 
-<!-- Mirrored from theme.crumina.net/html-woox-creative/021_contacts.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Aug 2018 22:44:03 GMT -->
-</html>
+	<!-- Mirrored from theme.crumina.net/html-woox-creative/021_contacts.html by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Aug 2018 22:44:03 GMT -->
+	</html>

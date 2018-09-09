@@ -1,978 +1,986 @@
-	<!DOCTYPE html>
-	<html lang="en">
+		<!DOCTYPE html>
+		<html lang="en">
 
 
-	<head>
-		<meta charset="UTF-8">
-		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
-		<title>IT Hunter</title>
+		<head>
+			<meta charset="UTF-8">
+			<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+			<title>IT Hunter</title>
 
-		<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
-		<link rel="stylesheet" type="text/css" href="css/plugins.min.css">
-		<link rel="stylesheet" type="text/css" href="css/theme-styles.min.css">
-		<link rel="stylesheet" type="text/css" href="css/blocks.min.css">
-		<link rel="stylesheet" type="text/css" href="css/widgets.min.css">
-		<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
-		<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
+			<link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+			<link rel="stylesheet" type="text/css" href="css/plugins.min.css">
+			<link rel="stylesheet" type="text/css" href="css/theme-styles.min.css">
+			<link rel="stylesheet" type="text/css" href="css/blocks.min.css">
+			<link rel="stylesheet" type="text/css" href="css/widgets.min.css">
+			<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+			<link rel="stylesheet" href="https://cdn.rawgit.com/konpa/devicon/df6431e323547add1b4cf45992913f15286456d3/devicon.min.css">
 
-		<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700i,900," rel="stylesheet">
-
-
-		<!--Styles for RTL-->
-
-		<!--<link rel="stylesheet" type="text/css" href="css/rtl.css">-->
+			<link href="https://fonts.googleapis.com/css?family=Playfair+Display:400,400i,700i,900," rel="stylesheet">
 
 
-	</head>
+			<!--Styles for RTL-->
 
-	<body class="crumina-grid">
-
-		<div id="alert-success">
-			<div class="container">
-				<div class="row">
-					<div class="col-md-12">
-						<div class="alert alert--large-bg alert-success" role="alert">
-							<div class="alert-icon">
-								<svg class="woox-icon icon-check-mark-2"><use xlink:href="svg-icons/sprites/icons.svg#icon-check-mark-2"></use></svg>
-							</div>
-							<div class="alert-content">
-								<strong>Váš dotaz byl odeslán!</strong>
-								 Děkujeme za Váš dotaz. Budeme Vás kontaktovat v nejbližší době.
-							</div>
-							<p style="cursor:pointer" class="icon-close">
-								<svg class="woox-icon icon-del"><use xlink:href="svg-icons/sprites/icons.svg#icon-del"></use></svg>
-							</p>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-
-	<!-- Preloader -->
-
-	<div id="hellopreloader">
-		<div class="preloader">
-			<svg width="80" height="80" fill="#fff" viewBox="0 0 105 105">
-				<circle cx="12.5" cy="12.5" r="12.5">
-					<animate attributeName="fill-opacity" begin="0s" calcMode="linear" dur="1s" repeatCount="indefinite" values="1;.2;1"/>
-				</circle>
-				<circle cx="12.5" cy="52.5" r="12.5" fill-opacity=".5">
-					<animate attributeName="fill-opacity" begin="100ms" calcMode="linear" dur="1s" repeatCount="indefinite" values="1;.2;1"/>
-				</circle>
-				<circle cx="52.5" cy="12.5" r="12.5">
-					<animate attributeName="fill-opacity" begin="300ms" calcMode="linear" dur="1s" repeatCount="indefinite" values="1;.2;1"/>
-				</circle>
-				<circle cx="52.5" cy="52.5" r="12.5">
-					<animate attributeName="fill-opacity" begin="600ms" calcMode="linear" dur="1s" repeatCount="indefinite" values="1;.2;1"/>
-				</circle>
-				<circle cx="92.5" cy="12.5" r="12.5">
-					<animate attributeName="fill-opacity" begin="800ms" calcMode="linear" dur="1s" repeatCount="indefinite" values="1;.2;1"/>
-				</circle>
-				<circle cx="92.5" cy="52.5" r="12.5">
-					<animate attributeName="fill-opacity" begin="400ms" calcMode="linear" dur="1s" repeatCount="indefinite" values="1;.2;1"/>
-				</circle>
-				<circle cx="12.5" cy="92.5" r="12.5">
-					<animate attributeName="fill-opacity" begin="700ms" calcMode="linear" dur="1s" repeatCount="indefinite" values="1;.2;1"/>
-				</circle>
-				<circle cx="52.5" cy="92.5" r="12.5">
-					<animate attributeName="fill-opacity" begin="500ms" calcMode="linear" dur="1s" repeatCount="indefinite" values="1;.2;1"/>
-				</circle>
-				<circle cx="92.5" cy="92.5" r="12.5">
-					<animate attributeName="fill-opacity" begin="200ms" calcMode="linear" dur="1s" repeatCount="indefinite" values="1;.2;1"/>
-				</circle>
-			</svg>
-			<div class="text">Načítání ...</div>
-		</div>
-	</div>
-
-	<!-- ... end Preloader -->
+			<!--<link rel="stylesheet" type="text/css" href="css/rtl.css">-->
 
 
-	<!-- Header -->
-<header class="header" id="site-header">
-	<div class="container">
-		<div class="header-content-wrapper">
-			<a href="index.html" class="site-logo">
-				<img src="img/logo.png" alt="ITHunter">
-			</a>
+		</head>
 
-			<a href="#" class="open-main-menu js-open-aside js-body-overlay">
-				<span></span>
-				<span></span>
-				<span></span>
-			</a>
-		</div>
-	</div>
-</header>
-	<!-- ... end Header -->
+		<body class="crumina-grid main-page">
 
-
-	<!-- Overlay Menu -->
-
-<div class="overlay-menu-wrap overlay-menu--style2" id="overlay-menu">
-	<a class='popup-close js-open-aside js-body-overlay' href='#'>
-		<svg class="woox-icon icon-close"><use xlink:href="svg-icons/sprites/icons.svg#icon-close"></use></svg>
-	</a>
-	<div class="perfect-scroll">
-		<nav class="overlay-menu">
-		<ul class="overlay-menu-list">
-			<li class="overlay-menu-item">
-				<a href="references.html">reference</a>
-			</li>
-			<li class="overlay-menu-item">
-				<a href="index.html#anchor-cenik" class="anchor-cenik">cenik</a>
-			</li>
-			<li class="overlay-menu-item">
-				<a href="index.html#anchor-tym" class="anchor-tym">tym</a>
-			</li>
-			<li class="overlay-menu-item">
-				<a href="kontakt.html">kontakt</a>
-			</li>
-		</ul>
-	</nav>
-	</div>
-</div>
-
-<!-- ... Overlay Menu -->
-
-	<div class="main-content-wrapper">
-
-		<section data-settings="particles-1" class="main-section crumina-flying-balls particles-js">
-			<div class="container">
-				<div class="row medium-padding120">
-					<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
-						<header class="crumina-module crumina-heading heading--h1 heading--with-decoration">
-							<h1 class="heading-title heading--half-colored">Jsme creative digital agency</h1>
-							<div class="heading-text">Kvalitní webové stránky vám pomohou k dosažení požadovaných cílů</div>
-						</header>
-						<a href="#" class="h5 link--with-decoration">číst více</a>
-					</div>
-				</div>
-            </div>
-		</section>
-
-
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<hr class="divider divider--style5">
-				</div>
-			</div>
-		</div>
-
-
-		<!--portfolio-->
-		<section class=" medium-padding120">
-			<div class="container">
-				<div class="row ">
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<header class="crumina-module crumina-heading heading--h2 heading--with-decoration">
-							<h2 class="heading-title">Úspěšně realizované <a href="references.html" class="h2 link--with-decoration"><b>projekty</b></a></h2>
-							<div class="heading-text">Reference</div>
-						</header>
-					</div>
-				</div>
-				<div class="row sorting-container " id="portfolio-grid" data-layout="masonry" data-isotope='{"masonry": { "columnWidth": ".grid-sizer" }}'>
-					<div class="grid-sizer"></div>
-					
-					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 sorting-item" data-mh="portfolio">
-						<div class="crumina-module crumina-portfolio-item">
-							<img src="img/sibdrevo0.jpg" alt="portfolio">
-							<div class="overlay-standard"></div>
-							<div class="content">
-								<a href="references.html" class="category">firemní web </a>
-								<h5 class="portfolio-title"> oakwoodtimber.cz pro Sibirske Drevo s.r.o</h5>
-							</div>
-							<div class="additional-info">
-								<a href="sibdrevo.html" class="btn btn--small btn--white btn--transparent btn--hover-decoration btn--with-icon btn--icon-right">prohlédnout web <svg class="woox-icon icon-arrow-right-line"><use xlink:href="svg-icons/sprites/icons.svg#icon-arrow-right-line"></use></svg></a>
-								
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 sorting-item" data-mh="portfolio">
-						<div class="crumina-module crumina-portfolio-item">
-							<img src="img/nasadle0.png" alt="portfolio">
-							<div class="overlay-standard"></div>
-							<div class="content">
-								<a href="nasadle.html" class="category">blog</a>
-								<h5 class="portfolio-title">www.nasadle.cz</h5>
-							</div>
-							<div class="additional-info">
-								<a href="nasadle.html" class="btn btn--small btn--white btn--transparent btn--hover-decoration btn--with-icon btn--icon-right">prohlédnout web <svg class="woox-icon icon-arrow-right-line"><use xlink:href="svg-icons/sprites/icons.svg#icon-arrow-right-line"></use></svg></a>
-								
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 sorting-item" data-mh="portfolio">
-						<div class="crumina-module crumina-portfolio-item">
-							<img src="img/portfolio2.jpg" alt="portfolio">
-							<div class="overlay-standard"></div>
-							<div class="content">
-								<a href="#" class="category">user interface</a>
-								<h5 class="portfolio-title">iPhone X Mockup Set features professional 3D models</h5>
-							</div>
-							<div class="additional-info">
-								<a href="#" class="btn btn--small btn--white btn--transparent btn--hover-decoration btn--with-icon btn--icon-right">prohlédnout web <svg class="woox-icon icon-arrow-right-line"><use xlink:href="svg-icons/sprites/icons.svg#icon-arrow-right-line"></use></svg></a>
-								
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 sorting-item" data-mh="portfolio">
-						<div class="crumina-module crumina-portfolio-item">
-							<img src="img/portfolio3.jpg" alt="portfolio">
-							<div class="overlay-standard"></div>
-							<div class="content">
-								<a href="#" class="category">user interface</a>
-								<h5 class="portfolio-title">iPhone X Mockup Set features professional 3D models</h5>
-							</div>
-							<div class="additional-info">
-								<a href="#" class="btn btn--small btn--white btn--transparent btn--hover-decoration btn--with-icon btn--icon-right">prohlédnout web <svg class="woox-icon icon-arrow-right-line"><use xlink:href="svg-icons/sprites/icons.svg#icon-arrow-right-line"></use></svg></a>
-								
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 sorting-item" data-mh="portfolio">
-						<div class="crumina-module crumina-portfolio-item">
-							<img src="img/portfolio2.jpg" alt="portfolio">
-							<div class="overlay-standard"></div>
-							<div class="content">
-								<a href="#" class="category">user interface</a>
-								<h5 class="portfolio-title">iPhone X Mockup Set features professional 3D models</h5>
-							</div>
-							<div class="additional-info">
-								<a href="#" class="btn btn--small btn--white btn--transparent btn--hover-decoration btn--with-icon btn--icon-right">prohlédnout web <svg class="woox-icon icon-arrow-right-line"><use xlink:href="svg-icons/sprites/icons.svg#icon-arrow-right-line"></use></svg></a>
-								
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 sorting-item" data-mh="portfolio">
-						<div class="crumina-module crumina-portfolio-item">
-							<img src="img/portfolio3.jpg" alt="portfolio">
-							<div class="overlay-standard"></div>
-							<div class="content">
-								<a href="#" class="category">user interface</a>
-								<h5 class="portfolio-title">iPhone X Mockup Set features professional 3D models</h5>
-							</div>
-							<div class="additional-info">
-								<a href="#" class="btn btn--small btn--white btn--transparent btn--hover-decoration btn--with-icon btn--icon-right">prohlédnout web <svg class="woox-icon icon-arrow-right-line"><use xlink:href="svg-icons/sprites/icons.svg#icon-arrow-right-line"></use></svg></a>
-								
-							</div>
-						</div>
-					</div>
-					
-					<div class="col-md-12">
-						<a href="references.html" class="h5 link--with-decoration">více
-							<svg class="woox-icon icon-arrow-right"><use xlink:href="svg-icons/sprites/icons.svg#icon-arrow-right"></use></svg>
-						</a>
-					</div>
-				</div>
-			</div>
-		</section>
-
-
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<hr class="divider divider--style4">
-				</div>
-			</div>
-		</div>
-		<!-- portfolio end-->
-
-
-		<!-- pocket of work start -->
-		<section class="pt-mobile-80" id="anchor-cenik">
-			<div class="container">
-				<div class="row medium-padding120">
+			<div id="alert-success">
+				<div class="container">
 					<div class="row">
-						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  mb30">
-							<header class="crumina-module crumina-heading heading--h2 align-center">
-							<h2 class="heading-title">Ceník služeb</h2>
-							<div class="heading-text">Vždy víte, za co platíte.</div>
-						</header>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb30">
-						<div class="crumina-module crumina-pricing-table pricing-table--style1">
-							<h4 class="pricing-title">Landing Page</h4>
-							<div class="price"><div class="currency">Kč</div><div class="price-value">od <br> 9 000</div></div>
-							<ul class="pricing-tables-position">
-								<li class="position-item">
-									základní<strong> SEO</strong> 
-								</li>
-								<li class="position-item">
-									<strong>do 20</strong> klíčových slov
-								</li>
-								<li class="position-item">
-									Vhodné pro jeden nebo více produktů
-								</li>
-								<li class="position-item">
-									<strong>Unikátní</strong> webdesign
-								</li>
-								
-								<li class="position-item">
-									<em>Jednoduché weby, které slouží především jako prezentace Vašich služeb či produktů, s designem na míru. Tyto weby jsou hezké a budou skvěle reprezentovat Vás a Vaši značku.</em>
-								</li>
-							</ul>
-							<a href="kontakt.html" class="btn btn--medium btn--secondary btn--hover-decoration"> objednat!</a>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb30">
-						<div class="crumina-module crumina-pricing-table pricing-table--style1 popular-pricing">
-							<h4 class="pricing-title">Mobilní aplikace</h4>
-							<div class="price"><div class="currency">Kč</div><div class="price-value">od <br> 15 000</div></div>
-							<ul class="pricing-tables-position">
-								<li class="position-item">
-									<strong>IOS</strong> aplikace
-								</li>
-								<li class="position-item">
-									<strong>Android</strong> aplikace
-								</li>
-								<li class="position-item">
-									<strong>Windows mobile</strong> aplikace
-								</li>
-								
-								<li class="position-item">
-									<em>Nabízíme možnost vytvoření mobilní aplikace, která pomůže vašim zákazníkům využít služby naplno i mimo klasické počítače a notebooky. Mezi výhody patří jednoduchá cesta stažení aplikace přímo do telefonu a dál už není uživatel závislý desktopovém připojení k internetu.</em>
-								</li>
-							</ul>
-							<a href="kontakt.html" class="btn btn--medium btn--secondary btn--hover-decoration">objednat!</a>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb30">
-						<div class="crumina-module crumina-pricing-table pricing-table--style1 ">
-							<h4 class="pricing-title">E-shopy</h4>
-							<div class="price"><div class="currency">Kč</div><div class="price-value">od <br> 35 000</div></div>
-							<ul class="pricing-tables-position">
-								
-								<li class="position-item">
-									<strong>.cz doména</strong> v ceně
-								</li>
-								<li class="position-item">
-									<strong> Hosting 2000 MB </strong> v ceně
-								</li>
-								<li class="position-item">
-									<strong>do 30 000</strong> produktů
-								</li>
-								<li class="position-item">
-									<strong>SEO</strong> optimizace
-								</li>
-								<li class="position-item">
-									<strong>Responzivní</strong> design
-								</li>
-								<li class="position-item">
-									<em> Cena těchto rozsáhlejších webových stránek je různá, závisí na mnoha věcech a nelze ji přesně stanovit bez toho, aby se podrobně prozkoumaly všechny Vaše potřeby a požadavky.</em>
-								</li>
-								
-							</ul>
-							<a href="kontakt.html" class="btn btn--medium btn--secondary btn--hover-decoration">objednat!</a>
-						</div>
-					</div>
-					<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb30">
-						<div class="crumina-module crumina-pricing-table pricing-table--style1">
-							<h4 class="pricing-title">Grafické Služby</h4>
-							<div class="price"><div class="currency">Kč</div><div class="price-value">od <br>2000</div></div>
-							<ul class="pricing-tables-position">
-								<li class="position-item">
-									<strong>Návrhy</strong>  a vizualizaci předmětů
-								</li>
-								<li class="position-item">
-									<strong>Tiskovou </strong>  grafiku
-								</li>
-								<li class="position-item">
-									<strong>Kreativní </strong> grafiku
-								</li>
-								
-								<li class="position-item">
-									<em>Téměř všechny formy reklamy jsou založeny na vizuální komunikaci.Tvoří jej nejen grafici, ilustrátoři a DTP specialisté pro předtiskovou přípravu, ale především si dáváme záležet na výsledné kreativě a nápadu, který je posléze vizualizován v našich grafických výstupech.</em>
-								</li>
-							</ul>
-							<a href="kontakt.html" class="btn btn--medium btn--secondary btn--hover-decoration">objednat!</a>
-						</div>
-					</div>
-				</div>
-				<hr class="divider divider--style9">
-			</div>
-		</section>
-		<!-- pocket of work end -->
-
-
-		<!-- what we do start -->
-		<section class="medium-padding120">
-			<div class="container">
-				<div class="row ">
-					<div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
-						<header class="crumina-module crumina-heading heading--h2 heading--with-decoration">
-							<h2 class="heading-title">Realizujeme a  <b>propagujeme</b> </h2>
-							<div class="heading-text">Naše práce však nekončí zveřejněním webu. Dohlížíme na jeho bezproblémové spuštění a navrhujeme další propagaci.</div>
-						</header>
-					</div>
-				</div>
-				<div class="row">
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-						<div class="crumina-module crumina-module-slider crumina-slider--info-boxes">
-							<div class="swiper-btn-wrap">
-								<div class="swiper-btn-next">
-									<svg class="woox-icon icon-line-arrow-right"><use xlink:href="svg-icons/sprites/icons.svg#icon-line-arrow-right"></use></svg>
-									<svg class="woox-icon icon-hover icon-line-arrow-right"><use xlink:href="svg-icons/sprites/icons.svg#icon-line-arrow-right"></use></svg>
+						<div class="col-md-12">
+							<div class="alert alert--large-bg alert-success" role="alert">
+								<div class="alert-icon">
+									<svg class="woox-icon icon-check-mark-2"><use xlink:href="svg-icons/sprites/icons.svg#icon-check-mark-2"></use></svg>
 								</div>
-
-								<div class="swiper-btn-prev">
-									<svg class="woox-icon icon-line-arrow-left"><use xlink:href="svg-icons/sprites/icons.svg#icon-line-arrow-left"></use></svg>
-									<svg class="woox-icon icon-hover icon-line-arrow-left"><use xlink:href="svg-icons/sprites/icons.svg#icon-line-arrow-left"></use></svg>
+								<div class="alert-content">
+									<strong>Váš dotaz byl odeslán!</strong>
+									 Děkujeme za Váš dotaz. Budeme Vás kontaktovat v nejbližší době.
 								</div>
-							</div>
-
-							<div class="swiper-container" data-show-items="3" data-prev-next="1">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<div class="crumina-module crumina-info-box info-box--style2">
-											<div class="info-box-thumb">
-												<img class="woox-icon" src="img/infobox1.png" alt="image">
-											</div>
-											<div class="info-box-content">
-												<h4 class="info-box-title">SEO a marketing</h4>
-												<p class="info-box-text">SEO, neboli optimalizace webu pro vyhledávače, představuje nástroj moderního marketingu sloužící ke zviditelnění webu. Jejím cílem je proměnit cílené návštěvníky ve spokojené zákazníky, získat více objednávek a tím si zajistit vyšší zisk. Nejedná se však o reklamu, SEO cílí na návštěvníky mající zájem o konkrétní služby či produkty.
-												</p>
-												<!--<a href="#" class="link--with-decoration">prohlédnout web </a>-->
-											</div>
-										</div>
-									</div>
-
-									<div class="swiper-slide">
-										<div class="crumina-module crumina-info-box info-box--style2">
-											<div class="info-box-thumb">
-												<img class="woox-icon" src="img/infobox2.png" alt="image">
-											</div>
-											<div class="info-box-content">
-												<h4 class="info-box-title">Responzivní na všech zařízeních</h4>
-												<p class="info-box-text">Zobrazování webových stránek je optimalizováno pro všechny druhy nejrůznějších zařízení. Responzivní webové stránky jsou kadně hodnoceny uživateli i vyhledávači a mohou být upřednostněny ve výsledcích vyhledávání před klasickýmy webovými stránky.
-												</p>
-												<!--<a href="#" class="link--with-decoration">prohlédnout web </a>-->
-											</div>
-										</div>
-									</div>
-
-									<div class="swiper-slide">
-										<div class="crumina-module crumina-info-box info-box--style2">
-											<div class="info-box-thumb">
-												<img class="woox-icon" src="img/infobox3.png" alt="image">
-											</div>
-											<div class="info-box-content">
-												<h4 class="info-box-title">Front-End Development</h4>
-												<p class="info-box-text">Spojíme vaši představu a naše zkušenosti. Výsledkem bude koncept webové stránky, která má zaděláno na úspěch.
-												</p>
-												<!--<a href="#" class="link--with-decoration">prohlédnout web </a>-->
-											</div>
-										</div>
-									</div>
-
-									<div class="swiper-slide">
-										<div class="crumina-module crumina-info-box info-box--style2">
-											<div class="info-box-thumb">
-												<img class="woox-icon" src="img/infobox3.png" alt="image">
-											</div>
-											<div class="info-box-content">
-												<h4 class="info-box-title">Back-end Development</h4>
-												<p class="info-box-text">Webové stránky nejsou jen to, co vidí běžný uživatel. Vyvineme pro vás serverové zázemí pro webové aplikace a přehlednou uživatelskou administraci.
-												</p>
-												<!--<a href="#" class="link--with-decoration">prohlédnout web </a>-->
-											</div>
-										</div>
-									</div>
-
-
-								</div>
+								<p style="cursor:pointer" class="icon-close">
+									<svg class="woox-icon icon-del"><use xlink:href="svg-icons/sprites/icons.svg#icon-del"></use></svg>
+								</p>
 							</div>
 						</div>
 					</div>
 				</div>
 			</div>
-		</section>
-		<!-- what we do end -->
 
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<hr class="divider divider--style4">
-				</div>
+		<!-- Preloader -->
+
+		<div id="hellopreloader">
+			<div class="preloader">
+				<svg width="80" height="80" fill="#fff" viewBox="0 0 105 105">
+					<circle cx="12.5" cy="12.5" r="12.5">
+						<animate attributeName="fill-opacity" begin="0s" calcMode="linear" dur="1s" repeatCount="indefinite" values="1;.2;1"/>
+					</circle>
+					<circle cx="12.5" cy="52.5" r="12.5" fill-opacity=".5">
+						<animate attributeName="fill-opacity" begin="100ms" calcMode="linear" dur="1s" repeatCount="indefinite" values="1;.2;1"/>
+					</circle>
+					<circle cx="52.5" cy="12.5" r="12.5">
+						<animate attributeName="fill-opacity" begin="300ms" calcMode="linear" dur="1s" repeatCount="indefinite" values="1;.2;1"/>
+					</circle>
+					<circle cx="52.5" cy="52.5" r="12.5">
+						<animate attributeName="fill-opacity" begin="600ms" calcMode="linear" dur="1s" repeatCount="indefinite" values="1;.2;1"/>
+					</circle>
+					<circle cx="92.5" cy="12.5" r="12.5">
+						<animate attributeName="fill-opacity" begin="800ms" calcMode="linear" dur="1s" repeatCount="indefinite" values="1;.2;1"/>
+					</circle>
+					<circle cx="92.5" cy="52.5" r="12.5">
+						<animate attributeName="fill-opacity" begin="400ms" calcMode="linear" dur="1s" repeatCount="indefinite" values="1;.2;1"/>
+					</circle>
+					<circle cx="12.5" cy="92.5" r="12.5">
+						<animate attributeName="fill-opacity" begin="700ms" calcMode="linear" dur="1s" repeatCount="indefinite" values="1;.2;1"/>
+					</circle>
+					<circle cx="52.5" cy="92.5" r="12.5">
+						<animate attributeName="fill-opacity" begin="500ms" calcMode="linear" dur="1s" repeatCount="indefinite" values="1;.2;1"/>
+					</circle>
+					<circle cx="92.5" cy="92.5" r="12.5">
+						<animate attributeName="fill-opacity" begin="200ms" calcMode="linear" dur="1s" repeatCount="indefinite" values="1;.2;1"/>
+					</circle>
+				</svg>
+				<div class="text">Načítání ...</div>
 			</div>
 		</div>
 
+		<!-- ... end Preloader -->
 
-		<!-- our team start -->
-		<section id="anchor-tym">
+
+		<!-- Header -->
+	<header class="header" id="site-header">
+		<div class="container">
+			<div class="header-content-wrapper">
+				<a href="index.html" class="site-logo">
+					<img src="img/logo.png" alt="ITHunter">
+				</a>
+
+				<a href="#" class="open-main-menu js-open-aside js-body-overlay">
+					<span></span>
+					<span></span>
+					<span></span>
+				</a>
+			</div>
+		</div>
+	</header>
+		<!-- ... end Header -->
+
+
+		<!-- Overlay Menu -->
+
+	<div class="overlay-menu-wrap overlay-menu--style2" id="overlay-menu">
+		<a class='popup-close js-open-aside js-body-overlay' href='#'>
+			<svg class="woox-icon icon-close"><use xlink:href="svg-icons/sprites/icons.svg#icon-close"></use></svg>
+		</a>
+		<div class="perfect-scroll">
+			<nav class="overlay-menu">
+				<ul class="overlay-menu-list">
+					<li class="overlay-menu-item">
+							<a href="index.html">domů</a>
+						</li>
+						<li class="overlay-menu-item">
+							<a href="references.html">reference</a>
+						</li>
+					<li class="overlay-menu-item">
+						<a href="index.html#anchor-cenik" class="anchor-cenik">cenik</a>
+					</li>
+					<li class="overlay-menu-item">
+						<a href="index.html#anchor-tym" class="anchor-tym">tym</a>
+					</li>
+					<li class="overlay-menu-item">
+						<a href="kontakt.html">kontakt</a>
+					</li>
+				</ul>
+			</nav>
+		</div>
+	</div>
+
+	<!-- ... Overlay Menu -->
+
+		<div class="main-content-wrapper">
+
+			<section data-settings="particles-1" class="main-section crumina-flying-balls particles-js" style="min-height: auto;">
+				<div class="container">
+					<div class="row medium-padding80">
+						<div class="col-lg-8 col-md-12 col-sm-12 col-xs-12">
+							<header class="crumina-module crumina-heading heading--h1 heading--with-decoration">
+								<h1 class="heading-title heading--half-colored">Jsme creative digital agency</h1>
+								<div class="heading-text">Kvalitní webové stránky vám pomohou k dosažení požadovaných cílů</div>
+							</header>
+							<a href="references.html" class="h5 link--with-decoration">reference</a>
+						</div>
+					</div>
+	            </div>
+			</section>
+
+
 			<div class="container">
-				<div class="row medium-padding120">
+				<div class="row">
+					<div class="col-md-12">
+						<hr class="divider divider--style5">
+					</div>
+				</div>
+			</div>
+
+
+			<!--portfolio-->
+			<section class=" medium-padding80">
+				<div class="container">
 					<div class="row ">
-						<div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 mb30">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
 							<header class="crumina-module crumina-heading heading--h2 heading--with-decoration">
-								<h2 class="heading-title">Seznamte se s lidmi, kteří <b>pro vás </b>budou pracovat</h2>
-								<div class="heading-text">Do každého projektu dáváme krom dovedností, také nadšení pro práci a entuziasmus. Přečtěte si naše krátké medailonky.</div>
+								<h2 class="heading-title">Úspěšně realizované <a href="references.html" class="h2 link--with-decoration"><b>projekty</b></a></h2>
+								<div class="heading-text">Spokojený zákazník a dlouhodobý vztah s ním, založený na důvěře a vzájemném respektu, jsou pro nás tou nejvyšší metou.<br> V případě vašeho zájmu o některé z našich realizovaných řešení jsme více než ochotni vám je prezentovat detailněji, včetně možnosti referenční návštěvy u konkrétního klienta a praktické ukázky.</div>
 							</header>
 						</div>
 					</div>
-					<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mb30">
-						<blockquote class="quote--style2">
-							<p>Jsme tu, abychom nakopli vaše podnikání díky inovativnímu myšlení, tvrdé práci a zaměření na výsledek.
-							</p>
-							<div class="author-block">
-								<div class="author-content">
-									<a href="#" class="author-name">Kanat Konyrbayev</a>
-									<div class="author-prof">founder</div>
-								</div>
-							</div>
-						</blockquote>
-					</div>
-					<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mb30">
-						<div class="crumina-module crumina-teammembers-item has-popup">
-							<div class="teammembers-thumb">
-								<img src="img/baha.jpg" alt="team member">
+					<div class="row sorting-container " id="portfolio-grid" data-layout="masonry" data-isotope='{"masonry": { "columnWidth": ".grid-sizer" }}'>
+						<div class="grid-sizer"></div>
+						
+						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 sorting-item" data-mh="portfolio">
+							<div class="crumina-module crumina-portfolio-item">
+								<img src="img/sibdrevo0.jpg" alt="portfolio">
 								<div class="overlay-standard"></div>
-								
-								<div class="teammember-content">
-									<p class="h6 teammembers-item-name">Bakytzhan Sultanov</p>
-									<div class="teammembers-item-prof">Backend Developer</div>
+								<div class="content">
+									<a href="references.html" class="category">firemní web </a>
+									<h5 class="portfolio-title"> oakwoodtimber.cz pro Sibirske Drevo s.r.o</h5>
+								</div>
+								<div class="additional-info">
+									<a href="sibdrevo.html" class="btn btn--small btn--white btn--transparent btn--hover-decoration btn--with-icon btn--icon-right">prohlédnout web <svg class="woox-icon icon-arrow-right-line"><use xlink:href="svg-icons/sprites/icons.svg#icon-arrow-right-line"></use></svg></a>
+									
 								</div>
 							</div>
-							
 						</div>
-					</div>
-					<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mb30">
-						<div class="crumina-module crumina-teammembers-item has-popup">
-							<div class="teammembers-thumb">
-								<img src="img/aitu.jpg" alt="team member">
+						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 sorting-item" data-mh="portfolio">
+							<div class="crumina-module crumina-portfolio-item">
+								<img src="img/nasadle0.png" alt="portfolio">
 								<div class="overlay-standard"></div>
-								
-								<div class="teammember-content">
-									<p class="h6 teammembers-item-name">Aituar Abdilully</p>
-									<div class="teammembers-item-prof">Frontend Developer</div>
+								<div class="content">
+									<a href="nasadle.html" class="category">blog</a>
+									<h5 class="portfolio-title">www.nasadle.cz</h5>
+								</div>
+								<div class="additional-info">
+									<a href="nasadle.html" class="btn btn--small btn--white btn--transparent btn--hover-decoration btn--with-icon btn--icon-right">prohlédnout web <svg class="woox-icon icon-arrow-right-line"><use xlink:href="svg-icons/sprites/icons.svg#icon-arrow-right-line"></use></svg></a>
+									
 								</div>
 							</div>
 						</div>
-					</div>
-					<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mb30">
-						<div class="crumina-module crumina-teammembers-item has-popup">
-							<div class="teammembers-thumb">
-								<img src="img/kana.jpg" align="top" alt="team member">
+						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 sorting-item" data-mh="portfolio">
+							<div class="crumina-module crumina-portfolio-item">
+								<img src="img/portfolio2.jpg" alt="portfolio">
 								<div class="overlay-standard"></div>
-								<div class="teammember-content">
-									<p class="h6 teammembers-item-name">Kanat Konyrbayev</p>
-									<div class="teammembers-item-prof">UX/UI designer</div>
+								<div class="content">
+									<a href="#" class="category">user interface</a>
+									<h5 class="portfolio-title">iPhone X Mockup Set features professional 3D models</h5>
+								</div>
+								<div class="additional-info">
+									<a href="#" class="btn btn--small btn--white btn--transparent btn--hover-decoration btn--with-icon btn--icon-right">prohlédnout web <svg class="woox-icon icon-arrow-right-line"><use xlink:href="svg-icons/sprites/icons.svg#icon-arrow-right-line"></use></svg></a>
+									
 								</div>
 							</div>
-							
 						</div>
-					</div>
-					<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mb30">
-						<div class="send-resume">
-							<img src="img/user.png" alt="user">
-							<div class="title">Chceš se bavit? Chceš se smát? Tak pojď s námi pracovat!<span class="c-primary"></span></div>
-							<a href="kontakt.html" class="btn btn--small btn--transparent btn--secondary">poslat životopis</a>
-						</div>
-					</div>
-				</div>
-				<hr class="divider divider--style5">
-			</div>
-		</section>
-		<!-- our team end -->
-
-		<!-- logos start -->
-		<section>
-			<div class="container">
-				<div class="row medium-padding120">
-					<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mb60">
-						<header class="crumina-module crumina-heading heading--h2 align-center">
-							<h2 class="heading-title">Jaké <b>technologie</b> používáme</h2>
-							<!--<div class="heading-text">Claritas est etiam processus dynamicus qui mutationem.</div>-->
-						</header>
-					</div>
-
-					<div class="col-lg-10 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
-						<div class="crumina-module crumina-module-slider clients--slider pagination-bottom-center">
-							<div class="swiper-container" data-show-items="5">
-								<div class="swiper-wrapper">
-									<div class="swiper-slide">
-										<a class="clients-item" href="#">
-											<svg viewBox="0 0 128 128">
-												<use xlink:href="svg-icons/sprites/icons.svg#angular"></use>
-                                            </svg>
-										</a>
-									</div>
-									<div class="swiper-slide">
-										<a class="clients-item" href="#">
-											<svg viewBox="0 0 128 128">
-												<use xlink:href="svg-icons/sprites/icons.svg#babel"></use>
-											</svg>
-										</a>
-									</div>
-									<div class="swiper-slide">
-										<a class="clients-item" href="#">
-											<svg viewBox="0 0 128 128">
-												<use xlink:href="svg-icons/sprites/icons.svg#bootstrap"></use>
-											</svg>
-										</a>
-									</div>
-									<div class="swiper-slide">
-										<a class="clients-item" href="#">
-											<svg viewBox="0 0 128 128">
-												<use xlink:href="svg-icons/sprites/icons.svg#node"></use>
-											</svg>
-										</a>
-									</div>
-									<div class="swiper-slide">
-										<a class="clients-item" href="#">
-											<svg viewBox="0 0 128 128">
-												<use xlink:href="svg-icons/sprites/icons.svg#php"></use>
-											</svg>
-										</a>
-									</div>
-									<div class="swiper-slide">
-										<a class="clients-item" href="#">
-											<svg viewBox="0 0 128 128">
-												<use xlink:href="svg-icons/sprites/icons.svg#laravel"></use>
-											</svg>
-										</a>
-									</div>
-									<div class="swiper-slide">
-										<a class="clients-item" href="#">
-											<svg viewBox="0 0 128 128">
-												<use xlink:href="svg-icons/sprites/icons.svg#sass"></use>
-											</svg>
-										</a>
-									</div>
-									<div class="swiper-slide">
-										<a class="clients-item" href="#">
-											<svg viewBox="0 0 128 128">
-												<use xlink:href="svg-icons/sprites/icons.svg#wordpress"></use>
-											</svg>
-										</a>
-									</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 sorting-item" data-mh="portfolio">
+							<div class="crumina-module crumina-portfolio-item">
+								<img src="img/portfolio3.jpg" alt="portfolio">
+								<div class="overlay-standard"></div>
+								<div class="content">
+									<a href="#" class="category">user interface</a>
+									<h5 class="portfolio-title">iPhone X Mockup Set features professional 3D models</h5>
+								</div>
+								<div class="additional-info">
+									<a href="#" class="btn btn--small btn--white btn--transparent btn--hover-decoration btn--with-icon btn--icon-right">prohlédnout web <svg class="woox-icon icon-arrow-right-line"><use xlink:href="svg-icons/sprites/icons.svg#icon-arrow-right-line"></use></svg></a>
+									
 								</div>
 							</div>
-
-							<!-- If we need pagination -->
-
-							<div class="swiper-pagination"></div>
-
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 sorting-item" data-mh="portfolio">
+							<div class="crumina-module crumina-portfolio-item">
+								<img src="img/portfolio2.jpg" alt="portfolio">
+								<div class="overlay-standard"></div>
+								<div class="content">
+									<a href="#" class="category">user interface</a>
+									<h5 class="portfolio-title">iPhone X Mockup Set features professional 3D models</h5>
+								</div>
+								<div class="additional-info">
+									<a href="#" class="btn btn--small btn--white btn--transparent btn--hover-decoration btn--with-icon btn--icon-right">prohlédnout web <svg class="woox-icon icon-arrow-right-line"><use xlink:href="svg-icons/sprites/icons.svg#icon-arrow-right-line"></use></svg></a>
+									
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 sorting-item" data-mh="portfolio">
+							<div class="crumina-module crumina-portfolio-item">
+								<img src="img/portfolio3.jpg" alt="portfolio">
+								<div class="overlay-standard"></div>
+								<div class="content">
+									<a href="#" class="category">user interface</a>
+									<h5 class="portfolio-title">iPhone X Mockup Set features professional 3D models</h5>
+								</div>
+								<div class="additional-info">
+									<a href="#" class="btn btn--small btn--white btn--transparent btn--hover-decoration btn--with-icon btn--icon-right">prohlédnout web <svg class="woox-icon icon-arrow-right-line"><use xlink:href="svg-icons/sprites/icons.svg#icon-arrow-right-line"></use></svg></a>
+									
+								</div>
+							</div>
 						</div>
 						
+						<div class="col-md-12">
+							<a href="references.html" class="h5 link--with-decoration">více
+								<svg class="woox-icon icon-arrow-right"><use xlink:href="svg-icons/sprites/icons.svg#icon-arrow-right"></use></svg>
+							</a>
+						</div>
+					</div>
+				</div>
+			</section>
+
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<hr class="divider divider--style4">
 					</div>
 				</div>
 			</div>
-		</section>
-		<!-- logos end -->
+			<!-- portfolio end-->
 
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
+
+			<!-- pocket of work start -->
+			<section class="pt-mobile-80" id="anchor-cenik">
+				<div class="container">
+					<div class="row medium-padding80">
+						<div class="row">
+							<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12  mb30">
+								<header class="crumina-module crumina-heading heading--h2 align-center">
+								<h2 class="heading-title">Ceník služeb</h2>
+								<div class="heading-text">Vždy víte, za co platíte.</div>
+							</header>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb30">
+							<div class="crumina-module crumina-pricing-table pricing-table--style1">
+								<h4 class="pricing-title">Landing Page</h4>
+								<div class="price"><div class="currency">Kč</div><div class="price-value">od <br> 9 000</div></div>
+								<ul class="pricing-tables-position">
+									<li class="position-item">
+										základní<strong> SEO</strong> 
+									</li>
+									<li class="position-item">
+										<strong>do 20</strong> klíčových slov
+									</li>
+									<li class="position-item">
+										Vhodné pro jeden nebo více produktů
+									</li>
+									<li class="position-item">
+										<strong>Unikátní</strong> webdesign
+									</li>
+									<li class="position-item">
+										<em>Jednoduché weby, které slouží především jako prezentace Vašich služeb či produktů, s designem na míru. Tyto weby jsou hezké a budou skvěle reprezentovat Vás a Vaši značku.</em>
+									</li>
+								</ul>
+								<a href="kontakt.html" class="btn btn--medium btn--secondary btn--hover-decoration"> objednat!</a>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb30">
+							<div class="crumina-module crumina-pricing-table pricing-table--style1 popular-pricing">
+								<h4 class="pricing-title">Firemní web </h4>
+								<div class="price"><div class="currency">Kč</div><div class="price-value">od <br> 15 000</div></div>
+								<ul class="pricing-tables-position">
+									<li class="position-item">
+										<strong>.cz doména</strong> v ceně
+									</li>
+									<li class="position-item">
+										<strong>do 40</strong> klíčových slov
+									</li>
+									<li class="position-item">
+										základní<strong> SEO</strong> 
+									</li>
+									<li class="position-item">
+										<strong> Hosting 1000 MB </strong> v ceně
+									</li>
+									<li class="position-item">
+										<strong>Unikátní</strong> webdesign
+									</li>
+									
+									<li class="position-item">
+										<em>Veškeré práce jsou již  v ceně: vlastní doména, registrace v Seznamu a Google, přístup do CMS, technická podpora, 1 rok umístění webu na internetu.</em>
+									</li>
+								</ul>
+								<a href="kontakt.html" class="btn btn--medium btn--secondary btn--hover-decoration">objednat!</a>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb30">
+							<div class="crumina-module crumina-pricing-table pricing-table--style1 ">
+								<h4 class="pricing-title">E-shopy</h4>
+								<div class="price"><div class="currency">Kč</div><div class="price-value">od <br> 35 000</div></div>
+								<ul class="pricing-tables-position">
+									
+									<li class="position-item">
+										<strong>.cz doména</strong> v ceně
+									</li>
+									<li class="position-item">
+										<strong> Hosting 2000 MB </strong> v ceně
+									</li>
+									<li class="position-item">
+										<strong>do 30 000</strong> produktů
+									</li>
+									<li class="position-item">
+										<strong>SEO</strong> optimizace
+									</li>
+									<li class="position-item">
+										<strong>Responzivní</strong> design
+									</li>
+									<li class="position-item">
+										<em> Cena těchto rozsáhlejších webových stránek je různá, závisí na mnoha věcech a nelze ji přesně stanovit bez toho, aby se podrobně prozkoumaly všechny Vaše potřeby a požadavky.</em>
+									</li>
+									
+								</ul>
+								<a href="kontakt.html" class="btn btn--medium btn--secondary btn--hover-decoration">objednat!</a>
+							</div>
+						</div>
+						<div class="col-lg-3 col-md-6 col-sm-6 col-xs-12 mb30">
+							<div class="crumina-module crumina-pricing-table pricing-table--style1">
+								<h4 class="pricing-title">Grafické Služby</h4>
+								<div class="price"><div class="currency">Kč</div><div class="price-value">od <br>2000</div></div>
+								<ul class="pricing-tables-position">
+									<li class="position-item">
+										<strong>Návrhy</strong>  a vizualizaci předmětů
+									</li>
+									<li class="position-item">
+										<strong>Tiskovou </strong>  grafiku
+									</li>
+									<li class="position-item">
+										<strong>Kreativní </strong> grafiku
+									</li>
+									
+									<li class="position-item">
+										<em>Téměř všechny formy reklamy jsou založeny na vizuální komunikaci.Tvoří jej nejen grafici, ilustrátoři a DTP specialisté pro předtiskovou přípravu, ale především si dáváme záležet na výsledné kreativě a nápadu, který je posléze vizualizován v našich grafických výstupech.</em>
+									</li>
+								</ul>
+								<a href="kontakt.html" class="btn btn--medium btn--secondary btn--hover-decoration">objednat!</a>
+							</div>
+						</div>
+					</div>
 					<hr class="divider divider--style9">
 				</div>
-			</div>
-		</div>
+			</section>
+			<!-- pocket of work end -->
 
-		<!-- testomonial start -->
-		<section class="medium-padding120">
+
+			<!-- what we do start -->
+			<section class="medium-padding80">
+				<div class="container">
+					<div class="row ">
+						<div class="col-lg-7 col-md-12 col-sm-12 col-xs-12">
+							<header class="crumina-module crumina-heading heading--h2 heading--with-decoration">
+								<h2 class="heading-title">Realizujeme a  <b>propagujeme</b> </h2>
+								<div class="heading-text">Naše práce však nekončí zveřejněním webu. Dohlížíme na jeho bezproblémové spuštění a navrhujeme další propagaci.</div>
+							</header>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+							<div class="crumina-module crumina-module-slider crumina-slider--info-boxes">
+								<div class="swiper-btn-wrap">
+									<div class="swiper-btn-next">
+										<svg class="woox-icon icon-line-arrow-right"><use xlink:href="svg-icons/sprites/icons.svg#icon-line-arrow-right"></use></svg>
+										<svg class="woox-icon icon-hover icon-line-arrow-right"><use xlink:href="svg-icons/sprites/icons.svg#icon-line-arrow-right"></use></svg>
+									</div>
+
+									<div class="swiper-btn-prev">
+										<svg class="woox-icon icon-line-arrow-left"><use xlink:href="svg-icons/sprites/icons.svg#icon-line-arrow-left"></use></svg>
+										<svg class="woox-icon icon-hover icon-line-arrow-left"><use xlink:href="svg-icons/sprites/icons.svg#icon-line-arrow-left"></use></svg>
+									</div>
+								</div>
+
+								<div class="swiper-container" data-show-items="3" data-prev-next="1">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<div class="crumina-module crumina-info-box info-box--style2">
+												<div class="info-box-thumb">
+													<img class="woox-icon" src="img/infobox1.png" alt="image">
+												</div>
+												<div class="info-box-content">
+													<h4 class="info-box-title">SEO a marketing</h4>
+													<p class="info-box-text">SEO, neboli optimalizace webu pro vyhledávače, představuje nástroj moderního marketingu sloužící ke zviditelnění webu. Jejím cílem je proměnit cílené návštěvníky ve spokojené zákazníky, získat více objednávek a tím si zajistit vyšší zisk. Nejedná se však o reklamu, SEO cílí na návštěvníky mající zájem o konkrétní služby či produkty.
+													</p>
+													<!--<a href="#" class="link--with-decoration">prohlédnout web </a>-->
+												</div>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="crumina-module crumina-info-box info-box--style2">
+												<div class="info-box-thumb">
+													<img class="woox-icon" src="img/infobox2.png" alt="image">
+												</div>
+												<div class="info-box-content">
+													<h4 class="info-box-title">Responzivní na všech zařízeních</h4>
+													<p class="info-box-text">Zobrazování webových stránek je optimalizováno pro všechny druhy nejrůznějších zařízení. Responzivní webové stránky jsou kadně hodnoceny uživateli i vyhledávači a mohou být upřednostněny ve výsledcích vyhledávání před klasickýmy webovými stránky.
+													</p>
+													<!--<a href="#" class="link--with-decoration">prohlédnout web </a>-->
+												</div>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="crumina-module crumina-info-box info-box--style2">
+												<div class="info-box-thumb">
+													<img class="woox-icon" src="img/infobox3.png" alt="image">
+												</div>
+												<div class="info-box-content">
+													<h4 class="info-box-title">Front-End Development</h4>
+													<p class="info-box-text">Spojíme vaši představu a naše zkušenosti. Výsledkem bude koncept webové stránky, která má zaděláno na úspěch.
+													</p>
+													<!--<a href="#" class="link--with-decoration">prohlédnout web </a>-->
+												</div>
+											</div>
+										</div>
+
+										<div class="swiper-slide">
+											<div class="crumina-module crumina-info-box info-box--style2">
+												<div class="info-box-thumb">
+													<img class="woox-icon" src="img/infobox3.png" alt="image">
+												</div>
+												<div class="info-box-content">
+													<h4 class="info-box-title">Back-end Development</h4>
+													<p class="info-box-text">Webové stránky nejsou jen to, co vidí běžný uživatel. Vyvineme pro vás serverové zázemí pro webové aplikace a přehlednou uživatelskou administraci.
+													</p>
+													<!--<a href="#" class="link--with-decoration">prohlédnout web </a>-->
+												</div>
+											</div>
+										</div>
+
+
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- what we do end -->
+
 			<div class="container">
-				<div class="row sorting-container testimonial-wrap" id="portfolio-grid" data-layout="masonry">
-					<div class="grid-sizer"></div>
-					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 sorting-item">
-						<div class="crumina-module crumina-testimonial-item">
-
-							<div class="testimonial-content double-borders">
-								<h6 class="testimonial-text">
-									<svg class="woox-icon icon-quote-icon quote"><use xlink:href="svg-icons/sprites/icons.svg#icon-quote-icon"></use></svg>
-									<svg class="woox-icon icon-quote-icon2 quote quote-close"><use xlink:href="svg-icons/sprites/icons.svg#icon-quote-icon2"></use></svg>
-									Spolupracujeme s touto firmou několik let, naše firma provozuje 15 webových stránek, které podporuje tato firma a zvladá to skvěle. Ještě k tomu IT Hunters vytvořila pro nás 3 krasné webové stránky v dohodnutém deadlinu, přičemž nároky na kvalitu dokázali splnit. 
-								</h6>
-
-								<div class="info-rating-wrap">
-
-									<!--<img src="img/testim-logo.png" alt="testim-logo">-->
-
-									<ul class="rait-stars">
-										<li>
-											<svg class="woox-icon icon-star-1"><use xlink:href="svg-icons/sprites/icons.svg#icon-star-1"></use></svg>
-										</li>
-										<li>
-											<svg class="woox-icon icon-star-1"><use xlink:href="svg-icons/sprites/icons.svg#icon-star-1"></use></svg>
-										</li>
-
-										<li>
-											<svg class="woox-icon icon-star-1"><use xlink:href="svg-icons/sprites/icons.svg#icon-star-1"></use></svg>
-										</li>
-										<li>
-											<svg class="woox-icon icon-star-1"><use xlink:href="svg-icons/sprites/icons.svg#icon-star-1"></use></svg>
-										</li>
-										<li>
-											<svg class="woox-icon icon-star-1"><use xlink:href="svg-icons/sprites/icons.svg#icon-star-1"></use></svg>
-										</li>
-									</ul>
-								</div>
-
-								<div class="second-border"></div>
-							</div>
-
-							<div class="author-block">
-								<img class="avatar" src="img/man.png" alt="avatar">
-								<div class="author-content">
-									<a href="#" class="author-name">Vlad Denisenko</a>
-									<div class="author-prof">Sib Drevo s.r.o</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 sorting-item">
-						<div class="crumina-module crumina-testimonial-item">
-
-							<div class="testimonial-content double-borders">
-								<h6 class="testimonial-text">
-									<svg class="woox-icon icon-quote-icon quote"><use xlink:href="svg-icons/sprites/icons.svg#icon-quote-icon"></use></svg>
-									<svg class="woox-icon icon-quote-icon2 quote quote-close"><use xlink:href="svg-icons/sprites/icons.svg#icon-quote-icon2"></use></svg>
-									Společnost IT Hunters vytvořila krásnou webovou stránku pro náš Autoservis. Během 2 měsícu společnost byla schopná nastavit CEO. Klientský přístup je na úrovni. Spolupracujeme s nimi i nadále. Určitě doporučujeme IT Hunters, jsme spokojení a diky teto společnosti můžeme pracovat v klidu.
-								</h6>
-
-								<div class="info-rating-wrap">
-
-									<!--<img src="img/testim-logo1.png" alt="testim-logo">-->
-
-									<ul class="rait-stars">
-										<li>
-											<svg class="woox-icon icon-star-1"><use xlink:href="svg-icons/sprites/icons.svg#icon-star-1"></use></svg>
-										</li>
-										<li>
-											<svg class="woox-icon icon-star-1"><use xlink:href="svg-icons/sprites/icons.svg#icon-star-1"></use></svg>
-										</li>
-
-										<li>
-											<svg class="woox-icon icon-star-1"><use xlink:href="svg-icons/sprites/icons.svg#icon-star-1"></use></svg>
-										</li>
-										<li>
-											<svg class="woox-icon icon-star-1"><use xlink:href="svg-icons/sprites/icons.svg#icon-star-1"></use></svg>
-										</li>
-										<li>
-											<svg class="woox-icon icon-star-1"><use xlink:href="svg-icons/sprites/icons.svg#icon-star-1"></use></svg>
-										</li>
-									</ul>
-								</div>
-
-								<div class="second-border"></div>
-							</div>
-
-							<div class="author-block">
-								<img class="avatar" src="img/man.png" alt="avatar">
-								<div class="author-content">
-									<a href="#" class="author-name">A. Baygaliyev</a>
-									<div class="author-prof">Transmission Service</div>
-								</div>
-							</div>
-						</div>
-					</div>
-					<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 sorting-item">
-						<div class="crumina-module crumina-testimonial-item">
-
-							<div class="testimonial-content double-borders">
-								<h6 class="testimonial-text">
-									<svg class="woox-icon icon-quote-icon quote"><use xlink:href="svg-icons/sprites/icons.svg#icon-quote-icon"></use></svg>
-									<svg class="woox-icon icon-quote-icon2 quote quote-close"><use xlink:href="svg-icons/sprites/icons.svg#icon-quote-icon2"></use></svg>
-									Firma vytrovila pro nasi turistickou společnost webovou stránku. Naprostá spokojenost!
-								</h6>
-
-								<div class="info-rating-wrap">
-
-									<!--<img src="img/testim-logo2.png" alt="testim-logo">-->
-
-									<ul class="rait-stars">
-										<li>
-											<svg class="woox-icon icon-star-1"><use xlink:href="svg-icons/sprites/icons.svg#icon-star-1"></use></svg>
-										</li>
-										<li>
-											<svg class="woox-icon icon-star-1"><use xlink:href="svg-icons/sprites/icons.svg#icon-star-1"></use></svg>
-										</li>
-
-										<li>
-											<svg class="woox-icon icon-star-1"><use xlink:href="svg-icons/sprites/icons.svg#icon-star-1"></use></svg>
-										</li>
-										<li>
-											<svg class="woox-icon icon-star-1"><use xlink:href="svg-icons/sprites/icons.svg#icon-star-1"></use></svg>
-										</li>
-										<li>
-											<svg class="woox-icon icon-star-1"><use xlink:href="svg-icons/sprites/icons.svg#icon-star-1"></use></svg>
-										</li>
-									</ul>
-								</div>
-
-								<div class="second-border"></div>
-							</div>
-
-							<div class="author-block">
-								<img class="avatar" src="img/woman.png" alt="avatar">
-								<div class="author-content">
-									<a href="#" class="author-name">T. Karla</a>
-									<div class="author-prof">Photo PRG</div>
-								</div>
-							</div>
-						</div>
+				<div class="row">
+					<div class="col-md-12">
+						<hr class="divider divider--style4">
 					</div>
 				</div>
 			</div>
-		</section>
-		<!-- testomonial end -->
 
-		<div class="container">
-			<div class="row">
-				<div class="col-md-12">
-					<hr class="divider divider--style4">
+
+			<!-- our team start -->
+			<section id="anchor-tym">
+				<div class="container">
+					<div class="row medium-padding80">
+						<div class="row ">
+							<div class="col-lg-7 col-md-12 col-sm-12 col-xs-12 mb30">
+								<header class="crumina-module crumina-heading heading--h2 heading--with-decoration">
+									<h2 class="heading-title">Seznamte se s lidmi, kteří <b>pro vás </b>budou pracovat</h2>
+									<div class="heading-text">Do každého projektu dáváme krom dovedností, také nadšení pro práci a entuziasmus. Přečtěte si naše krátké medailonky.</div>
+								</header>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mb30">
+							<blockquote class="quote--style2">
+								<p>Jsme tu, abychom nakopli vaše podnikání díky inovativnímu myšlení, tvrdé práci a zaměření na výsledek.
+								</p>
+								<div class="author-block">
+									<div class="author-content">
+										<a href="#" class="author-name">Kanat Konyrbayev</a>
+										<div class="author-prof">founder</div>
+									</div>
+								</div>
+							</blockquote>
+						</div>
+						<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mb30">
+							<div class="crumina-module crumina-teammembers-item has-popup">
+								<div class="teammembers-thumb">
+									<img src="img/baha.jpg" alt="team member">
+									<div class="overlay-standard"></div>
+									
+									<div class="teammember-content">
+										<p class="h6 teammembers-item-name">Bakytzhan Sultanov</p>
+										<div class="teammembers-item-prof">Backend Developer</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mb30">
+							<div class="crumina-module crumina-teammembers-item has-popup">
+								<div class="teammembers-thumb">
+									<img src="img/aitu.jpg" alt="team member">
+									<div class="overlay-standard"></div>
+									
+									<div class="teammember-content">
+										<p class="h6 teammembers-item-name">Aituar Abdilully</p>
+										<div class="teammembers-item-prof">Frontend Developer</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mb30">
+							<div class="crumina-module crumina-teammembers-item has-popup">
+								<div class="teammembers-thumb">
+									<img src="img/kana.jpg" align="top" alt="team member">
+									<div class="overlay-standard"></div>
+									<div class="teammember-content">
+										<p class="h6 teammembers-item-name">Kanat Konyrbayev</p>
+										<div class="teammembers-item-prof">UX/UI designer</div>
+									</div>
+								</div>
+								
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-12 col-sm-12 col-xs-12 mb30">
+							<div class="send-resume">
+								<img src="img/user.png" alt="user">
+								<div class="title">Chceš se bavit? Chceš se smát? Tak pojď s námi pracovat!<span class="c-primary"></span></div>
+								<a href="kontakt.html" class="btn btn--small btn--transparent btn--secondary">poslat životopis</a>
+							</div>
+						</div>
+					</div>
+					<hr class="divider divider--style5">
 				</div>
-			</div>
-		</div>
+			</section>
+			<!-- our team end -->
 
-		<!-- get touch start -->
-		<section class="medium-padding120 medium-last">
+			<!-- logos start -->
+			<section>
+				<div class="container">
+					<div class="row medium-padding80">
+						<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12 mb60">
+							<header class="crumina-module crumina-heading heading--h2 align-center">
+								<h2 class="heading-title">Jaké <b>technologie</b> používáme</h2>
+								<!--<div class="heading-text">Claritas est etiam processus dynamicus qui mutationem.</div>-->
+							</header>
+						</div>
+
+						<div class="col-lg-10 col-lg-offset-1 col-md-12 col-sm-12 col-xs-12">
+							<div class="crumina-module crumina-module-slider clients--slider pagination-bottom-center">
+								<div class="swiper-container" data-show-items="5">
+									<div class="swiper-wrapper">
+										<div class="swiper-slide">
+											<a class="clients-item" href="#">
+												<svg viewBox="0 0 128 128">
+													<use xlink:href="svg-icons/sprites/icons.svg#angular"></use>
+	                                            </svg>
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a class="clients-item" href="#">
+												<svg viewBox="0 0 128 128">
+													<use xlink:href="svg-icons/sprites/icons.svg#babel"></use>
+												</svg>
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a class="clients-item" href="#">
+												<svg viewBox="0 0 128 128">
+													<use xlink:href="svg-icons/sprites/icons.svg#bootstrap"></use>
+												</svg>
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a class="clients-item" href="#">
+												<svg viewBox="0 0 128 128">
+													<use xlink:href="svg-icons/sprites/icons.svg#node"></use>
+												</svg>
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a class="clients-item" href="#">
+												<svg viewBox="0 0 128 128">
+													<use xlink:href="svg-icons/sprites/icons.svg#php"></use>
+												</svg>
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a class="clients-item" href="#">
+												<svg viewBox="0 0 128 128">
+													<use xlink:href="svg-icons/sprites/icons.svg#laravel"></use>
+												</svg>
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a class="clients-item" href="#">
+												<svg viewBox="0 0 128 128">
+													<use xlink:href="svg-icons/sprites/icons.svg#sass"></use>
+												</svg>
+											</a>
+										</div>
+										<div class="swiper-slide">
+											<a class="clients-item" href="#">
+												<svg viewBox="0 0 128 128">
+													<use xlink:href="svg-icons/sprites/icons.svg#wordpress"></use>
+												</svg>
+											</a>
+										</div>
+									</div>
+								</div>
+
+								<!-- If we need pagination -->
+
+								<div class="swiper-pagination"></div>
+
+							</div>
+							
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- logos end -->
+
 			<div class="container">
-				<div class="row pb80">
-					<div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
-						<header class="crumina-module crumina-heading heading--h2 heading--with-decoration">
-							<svg class="woox-icon icon-wave wave-line"><use xlink:href="svg-icons/sprites/icons.svg#icon-wave"></use></svg>
-							<h2 class="heading-title heading--half-colored"><b>OZVĚTE SE </b>NÁM</h2>
-							<div class="heading-text">Nabízím Vám možnost, jak zcela nezávazně (zdarma) zjistit, kolik by Vás mé služby stály. Během pracovního dne vás budeme telefonicky kontaktovat </div>
-						</header>
-					</div>
-					<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
-						<form class="contact-form login-form" method="post" action="mail.php">
-							<!-- Hidden Required Fields -->
-						<input type="hidden" name="ithunter" value="IT Hunter">
-						<input type="hidden" name="admin_email" value="kanat3108@gmail.com">
-						<input type="hidden" name="form_subject" value="Form Subject">
-						<!-- END Hidden Required Fields -->
-							<div class="row">
-								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									<div class="form-group label-floating is-empty">
-										<label class="input-label control-label">Vaše zpráva <abbr class="required" title="required">*</abbr></label>
-										<textarea class="form-control input--squared height-140" name="message" placeholder=""></textarea>
-									</div>
-								</div>
-								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									<div class="form-group label-floating">
-										<label class="input-label control-label"> Jméno <abbr class="required" title="required">*</abbr></label>
-										<input class="form-control input--squared" type="text" name="Name" value="">
-									</div>
-								</div>
-								<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
-									<div class="form-group label-floating">
-										<label class="input-label control-label"> E-mail <abbr class="required" title="required">*</abbr></label>
-										<input class="form-control input--squared" type="email" name="email" value="">
-									</div>
-								</div>
-							</div>
-							<div class="row">
-								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-									<div class="form-group label-floating is-empty">
-										<label class="input-label control-label">Telefon<abbr class="required" title="required">*</abbr></label>
-										<input class="form-control input--squared" type="phone" name="phone" value="">
-									</div>
-								</div>
-
-								<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
-									<button type="submit" class="btn btn--medium btn--secondary btn--hover-decoration full-width">odeslat</button>
-								</div>
-
-							</div>
-						</form>
+				<div class="row">
+					<div class="col-md-12">
+						<hr class="divider divider--style9">
 					</div>
 				</div>
 			</div>
-		</section>
-		<!-- get touch end -->
-	</div>
 
+			<!-- testomonial start -->
+			<section class="medium-padding80">
+				<div class="container">
+					<div class="row sorting-container testimonial-wrap" id="portfolio-grid" data-layout="masonry">
+						<div class="grid-sizer"></div>
+						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 sorting-item">
+							<div class="crumina-module crumina-testimonial-item">
 
-	<!-- Footer -->
+								<div class="testimonial-content double-borders">
+									<h6 class="testimonial-text">
+										<svg class="woox-icon icon-quote-icon quote"><use xlink:href="svg-icons/sprites/icons.svg#icon-quote-icon"></use></svg>
+										<svg class="woox-icon icon-quote-icon2 quote quote-close"><use xlink:href="svg-icons/sprites/icons.svg#icon-quote-icon2"></use></svg>
+										Spolupracujeme s touto firmou několik let, naše firma provozuje 15 webových stránek, které podporuje tato firma a zvladá to skvěle. Ještě k tomu IT Hunters vytvořila pro nás 3 krasné webové stránky v dohodnutém deadlinu, přičemž nároky na kvalitu dokázali splnit. 
+									</h6>
 
-	<footer id="site-footer" class="footer crumina-parallax-background">
+									<div class="info-rating-wrap">
 
-		<div class="scene">
-			<div data-depth="0.2" class="layer first-layer"></div>
-			<div data-depth="0.6" class="layer second-layer"></div>
-			<div data-depth="1" class="layer third-layer"></div>
+										<!--<img src="img/testim-logo.png" alt="testim-logo">-->
+
+										<ul class="rait-stars">
+											<li>
+												<svg class="woox-icon icon-star-1"><use xlink:href="svg-icons/sprites/icons.svg#icon-star-1"></use></svg>
+											</li>
+											<li>
+												<svg class="woox-icon icon-star-1"><use xlink:href="svg-icons/sprites/icons.svg#icon-star-1"></use></svg>
+											</li>
+
+											<li>
+												<svg class="woox-icon icon-star-1"><use xlink:href="svg-icons/sprites/icons.svg#icon-star-1"></use></svg>
+											</li>
+											<li>
+												<svg class="woox-icon icon-star-1"><use xlink:href="svg-icons/sprites/icons.svg#icon-star-1"></use></svg>
+											</li>
+											<li>
+												<svg class="woox-icon icon-star-1"><use xlink:href="svg-icons/sprites/icons.svg#icon-star-1"></use></svg>
+											</li>
+										</ul>
+									</div>
+
+									<div class="second-border"></div>
+								</div>
+
+								<div class="author-block">
+									<img class="avatar" src="img/man.png" alt="avatar">
+									<div class="author-content">
+										<a href="#" class="author-name">Vlad Denisenko</a>
+										<div class="author-prof">Sib Drevo s.r.o</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 sorting-item">
+							<div class="crumina-module crumina-testimonial-item">
+
+								<div class="testimonial-content double-borders">
+									<h6 class="testimonial-text">
+										<svg class="woox-icon icon-quote-icon quote"><use xlink:href="svg-icons/sprites/icons.svg#icon-quote-icon"></use></svg>
+										<svg class="woox-icon icon-quote-icon2 quote quote-close"><use xlink:href="svg-icons/sprites/icons.svg#icon-quote-icon2"></use></svg>
+										Společnost IT Hunters vytvořila krásnou webovou stránku pro náš Autoservis. Během 2 měsícu společnost byla schopná nastavit CEO. Klientský přístup je na úrovni. Spolupracujeme s nimi i nadále. Určitě doporučujeme IT Hunters, jsme spokojení a diky teto společnosti můžeme pracovat v klidu.
+									</h6>
+
+									<div class="info-rating-wrap">
+
+										<!--<img src="img/testim-logo1.png" alt="testim-logo">-->
+
+										<ul class="rait-stars">
+											<li>
+												<svg class="woox-icon icon-star-1"><use xlink:href="svg-icons/sprites/icons.svg#icon-star-1"></use></svg>
+											</li>
+											<li>
+												<svg class="woox-icon icon-star-1"><use xlink:href="svg-icons/sprites/icons.svg#icon-star-1"></use></svg>
+											</li>
+
+											<li>
+												<svg class="woox-icon icon-star-1"><use xlink:href="svg-icons/sprites/icons.svg#icon-star-1"></use></svg>
+											</li>
+											<li>
+												<svg class="woox-icon icon-star-1"><use xlink:href="svg-icons/sprites/icons.svg#icon-star-1"></use></svg>
+											</li>
+											<li>
+												<svg class="woox-icon icon-star-1"><use xlink:href="svg-icons/sprites/icons.svg#icon-star-1"></use></svg>
+											</li>
+										</ul>
+									</div>
+
+									<div class="second-border"></div>
+								</div>
+
+								<div class="author-block">
+									<img class="avatar" src="img/man.png" alt="avatar">
+									<div class="author-content">
+										<a href="#" class="author-name">A. Baygaliyev</a>
+										<div class="author-prof">Transmission Service</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="col-lg-4 col-md-6 col-sm-6 col-xs-12 sorting-item">
+							<div class="crumina-module crumina-testimonial-item">
+
+								<div class="testimonial-content double-borders">
+									<h6 class="testimonial-text">
+										<svg class="woox-icon icon-quote-icon quote"><use xlink:href="svg-icons/sprites/icons.svg#icon-quote-icon"></use></svg>
+										<svg class="woox-icon icon-quote-icon2 quote quote-close"><use xlink:href="svg-icons/sprites/icons.svg#icon-quote-icon2"></use></svg>
+										Firma vytrovila pro nasi turistickou společnost webovou stránku. Naprostá spokojenost!
+									</h6>
+
+									<div class="info-rating-wrap">
+
+										<!--<img src="img/testim-logo2.png" alt="testim-logo">-->
+
+										<ul class="rait-stars">
+											<li>
+												<svg class="woox-icon icon-star-1"><use xlink:href="svg-icons/sprites/icons.svg#icon-star-1"></use></svg>
+											</li>
+											<li>
+												<svg class="woox-icon icon-star-1"><use xlink:href="svg-icons/sprites/icons.svg#icon-star-1"></use></svg>
+											</li>
+
+											<li>
+												<svg class="woox-icon icon-star-1"><use xlink:href="svg-icons/sprites/icons.svg#icon-star-1"></use></svg>
+											</li>
+											<li>
+												<svg class="woox-icon icon-star-1"><use xlink:href="svg-icons/sprites/icons.svg#icon-star-1"></use></svg>
+											</li>
+											<li>
+												<svg class="woox-icon icon-star-1"><use xlink:href="svg-icons/sprites/icons.svg#icon-star-1"></use></svg>
+											</li>
+										</ul>
+									</div>
+
+									<div class="second-border"></div>
+								</div>
+
+								<div class="author-block">
+									<img class="avatar" src="img/woman.png" alt="avatar">
+									<div class="author-content">
+										<a href="#" class="author-name">T. Karla</a>
+										<div class="author-prof">Photo PRG</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- testomonial end -->
+
+			<div class="container">
+				<div class="row">
+					<div class="col-md-12">
+						<hr class="divider divider--style4">
+					</div>
+				</div>
+			</div>
+
+			<!-- get touch start -->
+			<section class="medium-padding80 medium-last">
+				<div class="container">
+					<div class="row pb80">
+						<div class="col-lg-5 col-md-12 col-sm-12 col-xs-12">
+							<header class="crumina-module crumina-heading heading--h2 heading--with-decoration">
+								<svg class="woox-icon icon-wave wave-line"><use xlink:href="svg-icons/sprites/icons.svg#icon-wave"></use></svg>
+								<h2 class="heading-title heading--half-colored"><b>OZVĚTE SE </b>NÁM</h2>
+								<div class="heading-text">Nabízím Vám možnost, jak zcela nezávazně (zdarma) zjistit, kolik by Vás mé služby stály. Během pracovního dne vás budeme telefonicky kontaktovat </div>
+							</header>
+						</div>
+						<div class="col-lg-6 col-md-12 col-sm-12 col-xs-12">
+							<form class="contact-form login-form" method="post" action="mail.php">
+								<!-- Hidden Required Fields -->
+							<input type="hidden" name="ithunter" value="IT Hunter">
+							<input type="hidden" name="admin_email" value="kanat3108@gmail.com">
+							<input type="hidden" name="form_subject" value="Form Subject">
+							<!-- END Hidden Required Fields -->
+								<div class="row">
+									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+										<div class="form-group label-floating is-empty">
+											<label class="input-label control-label">Vaše zpráva <abbr class="required" title="required">*</abbr></label>
+											<textarea class="form-control input--squared height-140" name="message" placeholder=""></textarea>
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+										<div class="form-group label-floating">
+											<label class="input-label control-label"> Jméno <abbr class="required" title="required">*</abbr></label>
+											<input class="form-control input--squared" type="text" name="Name" value="">
+										</div>
+									</div>
+									<div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+										<div class="form-group label-floating">
+											<label class="input-label control-label"> E-mail <abbr class="required" title="required">*</abbr></label>
+											<input class="form-control input--squared" type="email" name="email" value="">
+										</div>
+									</div>
+								</div>
+								<div class="row">
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<div class="form-group label-floating is-empty">
+											<label class="input-label control-label">Telefon<abbr class="required" title="required">*</abbr></label>
+											<input class="form-control input--squared" type="phone" name="phone" value="">
+										</div>
+									</div>
+
+									<div class="col-lg-6 col-md-6 col-sm-12 col-xs-12">
+										<button type="submit" class="btn btn--medium btn--secondary btn--hover-decoration full-width">odeslat</button>
+									</div>
+
+								</div>
+							</form>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- get touch end -->
 		</div>
 
-		<div class="container">
-			<div class="row">
-				<div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
-					<div class="widget w-info">
-						<a href="index.html" class="site-logo">
-							<img src="img/logo.png" alt="ITHunter">
-						</a>
-						<p>Kvalitní webové stránky vám pomohou k dosažení požadovaných cílů
-						</p>
-					</div>
-					<div class="copyright-wrapper">
-							<a class="back-to-top" href="#">
-								<svg class="woox-icon icon-top-arrow"><use xlink:href="svg-icons/sprites/icons.svg#icon-top-arrow"></use></svg>
+
+		<!-- Footer -->
+
+		<footer id="site-footer" class="footer crumina-parallax-background">
+
+			<div class="scene">
+				<div data-depth="0.2" class="layer first-layer"></div>
+				<div data-depth="0.6" class="layer second-layer"></div>
+				<div data-depth="1" class="layer third-layer"></div>
+			</div>
+
+			<div class="container">
+				<div class="row">
+					<div class="col-lg-5 col-md-6 col-sm-12 col-xs-12">
+						<div class="widget w-info">
+							<a href="index.html" class="site-logo">
+								<img src="img/logo.png" alt="ITHunter">
 							</a>
-
-							<div>
-								<span>IČO 	07363061</span><br>
-								<span>U Průhonu 827/5, 170 00 Praha 7 - Holešovice</span><br>
-								<span><a href="index.html">IT Hunter company s.r.o.</a> - Creative Agency .</span><br>
-								<span>© All right reserved 2018.</span>
-							</div>
+							<p>Kvalitní webové stránky vám pomohou k dosažení požadovaných cílů
+							</p>
 						</div>
-				</div>
-				<div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
-					<div class="widget w-contacts">
-						<ul class="socials">
-							<li>
-								<a href="#">
-									<i class="fab fa-instagram woox-icon"></i>
+						<div class="copyright-wrapper">
+								<a class="back-to-top" href="#">
+									<svg class="woox-icon icon-top-arrow"><use xlink:href="svg-icons/sprites/icons.svg#icon-top-arrow"></use></svg>
 								</a>
-							</li>
 
-							<li>
-								<a href="#">
-									<i class="fab fa-linkedin-in woox-icon"></i>
-								</a>
-							</li>
+								<div>
+									<span>IČO 	07363061</span><br>
+									<span>U Průhonu 827/5, 170 00 Praha 7 - Holešovice</span><br>
+									<span><a href="index.html">IT Hunter company s.r.o.</a> - Creative Agency .</span><br>
+									<span>© All right reserved 2018.</span>
+								</div>
+							</div>
+					</div>
+					<div class="col-lg-7 col-md-6 col-sm-12 col-xs-12">
+						<div class="widget w-contacts">
+							<ul class="socials">
+								<li>
+									<a href="#">
+										<i class="fab fa-instagram woox-icon"></i>
+									</a>
+								</li>
 
-							<li>
-								<a href="#">
-									<i class="fab fa-facebook-square woox-icon"></i>
-								</a>
-							</li>
-						</ul>
-						<div class="send-us"><a href="" class="link--with-decoration">ithuntercz@gmail.com</a></div>
+								<li>
+									<a href="#">
+										<i class="fab fa-linkedin-in woox-icon"></i>
+									</a>
+								</li>
+
+								<li>
+									<a href="#">
+										<i class="fab fa-facebook-square woox-icon"></i>
+									</a>
+								</li>
+							</ul>
+							<div class="send-us"><a href="" class="link--with-decoration">ithuntercz@gmail.com</a></div>
+						</div>
 					</div>
 				</div>
 			</div>
-		</div>
-	</footer>
+		</footer>
 
-	<!-- ... end Footer -->
+		<!-- ... end Footer -->
 
 
-	<script src="js/method-assign.js"></script>
+		<script src="js/method-assign.js"></script>
 
-	<!-- jQuery first, then Other JS. -->
+		<!-- jQuery first, then Other JS. -->
 
-	<script src="js/jquery-3.3.1.min.js"></script>
+		<script src="js/jquery-3.3.1.min.js"></script>
 
-	<script src="js/theme-plugins.js"></script>
+		<script src="js/theme-plugins.js"></script>
 
-	<script src="js/js-plugins/isotope.pkgd.min.js"></script>
-	<script src="js/js-plugins/ajax-pagination.js"></script>
-	<script src="js/js-plugins/swiper.min.js"></script>
-	<script src="js/js-plugins/material.min.js"></script>
+		<script src="js/js-plugins/isotope.pkgd.min.js"></script>
+		<script src="js/js-plugins/ajax-pagination.js"></script>
+		<script src="js/js-plugins/swiper.min.js"></script>
+		<script src="js/js-plugins/material.min.js"></script>
 
-	<script src="js/js-plugins/bootstrap-datepicker.js"></script>
+		<script src="js/js-plugins/bootstrap-datepicker.js"></script>
 
-	<!-- FontAwesome 5.x.x JS -->
+		<!-- FontAwesome 5.x.x JS -->
 
-	<script defer src="fonts/fontawesome-all.js"></script>
+		<script defer src="fonts/fontawesome-all.js"></script>
 
-	<script src="js/main.js"></script>
+		<script src="js/main.js"></script>
 
-	</body>
+		</body>
 
-	<!-- Mirrored from theme.crumina.net/html-woox-creative/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Aug 2018 22:42:47 GMT -->
-	</html>
+		<!-- Mirrored from theme.crumina.net/html-woox-creative/ by HTTrack Website Copier/3.x [XR&CO'2014], Sun, 19 Aug 2018 22:42:47 GMT -->
+		</html>

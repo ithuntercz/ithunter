@@ -495,7 +495,7 @@ h2 {
 
 .h1,
 h1 {
-    font-size: 100px;
+    font-size: 90px;
     font-weight: 700;
     color: #3D434F;
     font-family: Comfortaa, Arial, "Helvetica Neue", Helvetica, sans-serif;
@@ -4881,4 +4881,12 @@ screen and (max-height:300px) {
     .preloader .text {
         font-size: 10px
     }
+}
+
+#site-footer p{
+    color: #000;
+}
+
+#site-footer span{
+    color: #000;
 }

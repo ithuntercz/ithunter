@@ -1401,7 +1401,7 @@ a:active {
 
 .crumina-slider--info-boxes {
     position: relative;
-    padding: 120px 240px 120px 120px;
+    padding: 80px 160px 80px 80px;
     background-color: #fff;
     box-shadow: 5px 0 60px 0 rgba(61, 67, 79, .08);
     border-radius: 40px
@@ -6195,8 +6195,8 @@ table>thead>tr>th.danger {
 .socials .woox-icon {
     height: 22px;
     width: 22px;
-    fill: #c3c9d4;
-    color: #c3c9d4;
+    fill: #000;
+    color: #000;
     vertical-align: middle;
     z-index: 2
 }
