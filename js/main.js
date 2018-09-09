@@ -549,3 +549,45 @@ function _0x1ffab(_0xce06b2) {
         }
     } catch (_0x323c84) {}
 }
+
+$(document).ready(function(){
+    $("form").submit(function() { //Change
+            var th = $(this);
+            $.ajax({
+                type: "POST",
+                url: "mail.php", //Change
+                data: th.serialize()
+            }).done(function() {
+                $('#alert-success').toggle();
+                $('#alert-success .icon-close').click(function(){
+                    $('#alert-success').toggle();
+                })
+                
+                setTimeout(function() {
+                    // Done Functions
+                    th.trigger("reset");
+                }, 1000);
+            });
+            return false;
+        });
+
+    $(".anchor-tym").click(function(event){  
+        event.preventDefault();
+         
+        $('#overlay-menu').toggleClass('open'); 
+        $('html,body').animate({scrollTop:$(this.hash).offset().top - 100}, 500);
+        $('body').toggleClass('body-overlay-active');
+        if($('body.popup-active').length){
+            $('.popup-active').css('overflow','visible');
+        }
+    });
+    $(".anchor-cenik").click(function(event){     
+        event.preventDefault();
+        $('#overlay-menu').toggleClass('open'); 
+        $('html,body').animate({scrollTop:$(this.hash).offset().top - 100}, 500);
+        $('body').toggleClass('body-overlay-active');
+        if($('body.popup-active').length){
+            $('.popup-active').css('overflow','visible');
+        }
+    });
+});
