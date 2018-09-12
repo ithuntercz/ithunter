@@ -5677,7 +5677,7 @@ table>thead>tr>th.danger {
 
 .promo-block,
 .table--style3>tbody>tr>td:hover {
-    box-shadow: 15px 0 40px 0 rgba(61, 67, 79, .08)
+    box-shadow: 0 0 40px 0 rgba(61, 67, 79, .5)
 }
 
 .table--style3>tbody>tr>td {
